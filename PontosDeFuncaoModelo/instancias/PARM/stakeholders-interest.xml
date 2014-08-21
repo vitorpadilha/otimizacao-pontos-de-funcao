@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<stakeholders-interests>
+    <stakeholders>
+        <stakeholder name="SIBE I" weight="2"/>
+        <stakeholder name="SGPe" weight="1"/>
+        <stakeholder name="SIBE II" weight="2"/>
+    </stakeholders>
+    <interests>
+        <interest transactionRef="IncluirTipoFundamentacaoLegal" stakeholder="SIBE I" value="75"/>
+        <interest transactionRef="IncluirTipoFundamentacaoLegal" stakeholder="SIBE II" value="75"/>
+		
+        <interest transactionRef="AlterarTipoFundamentacaoLegal" stakeholder="SIBE II" value="25"/>
+        <interest transactionRef="AlterarTipoFundamentacaoLegal" stakeholder="SIBE I" value="25"/>
+		
+        <interest transactionRef="ExcluirTipoFundamentacaoLegal" stakeholder="SIBE I" value="75"/>
+        <interest transactionRef="ExcluirTipoFundamentacaoLegal" stakeholder="SIBE II" value="75"/>
+		
+        <interest transactionRef="PesquisarTipoFundamentacaoLegal" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="PesquisarTipoFundamentacaoLegal" stakeholder="SIBE II" value="25"/>
+		
+        <interest transactionRef="DetalharTipoFundamentacaoLegal" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="DetalharTipoFundamentacaoLegal" stakeholder="SIBE II" value="25"/>
+		
+		
+        <interest transactionRef="IncluirReferenciaFundamentacaoLegal" stakeholder="SIBE I" value="75"/>
+		<interest transactionRef="IncluirReferenciaFundamentacaoLegal" stakeholder="SIBE II" value="25"/>
+		
+        <interest transactionRef="AlterarReferenciaFundamentacaoLegal" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="AlterarReferenciaFundamentacaoLegal" stakeholder="SIBE II" value="25"/>
+		
+        <interest transactionRef="ExcluirReferenciaFundamentacaoLegal" stakeholder="SIBE I" value="75"/>
+		<interest transactionRef="ExcluirReferenciaFundamentacaoLegal" stakeholder="SIBE II" value="25"/>
+		
+        <interest transactionRef="PesquisarReferenciaFundamentacaoLegal" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="PesquisarReferenciaFundamentacaoLegal" stakeholder="SIBE II" value="25"/>
+		
+        <interest transactionRef="DetalharReferenciaFundamentacaoLegal" stakeholder="SIBE I" value="25"/>
+		
+        <interest transactionRef="IncluirAutoridadeEmissora" stakeholder="SIBE I" value="75"/>
+		
+        <interest transactionRef="AlterarAutoridadeEmissora" stakeholder="SIBE I" value="25"/>
+		
+        <interest transactionRef="ExcluirAutoridadeEmissora" stakeholder="SIBE I" value="75"/>
+		
+        <interest transactionRef="PesquisarAutoridadeEmissora" stakeholder="SIBE I" value="25"/>
+		
+        <interest transactionRef="DetalharAutoridadeEmissora" stakeholder="SIBE I" value="25"/>
+		
+        <interest transactionRef="IncluirFundamentacaoLegal" stakeholder="SIBE I" value="100"/>
+        <interest transactionRef="IncluirFundamentacaoLegal" stakeholder="SIBE II" value="75"/>
+		
+        <interest transactionRef="AlterarFundamentacaoLegal" stakeholder="SIBE I" value="50"/>
+        <interest transactionRef="AlterarFundamentacaoLegal" stakeholder="SIBE II" value="50"/>
+		
+        <interest transactionRef="ExcluirFundamentacaoLegal" stakeholder="SIBE I" value="100"/>
+		<interest transactionRef="ExcluirFundamentacaoLegal" stakeholder="SIBE II" value="75"/>
+		
+        <interest transactionRef="PesquisarFundamentacaoLegal" stakeholder="SIBE I" value="100"/>
+        <interest transactionRef="PesquisarFundamentacaoLegal" stakeholder="SIBE II" value="25"/>
+		
+        <interest transactionRef="DetalharFundamentacaoLegal" stakeholder="SIBE I" value="50"/>
+        <interest transactionRef="DetalharFundamentacaoLegal" stakeholder="SIBE II" value="75"/>
+		
+		
+        <interest transactionRef="IncluirImpostoDeRenda" stakeholder="SIBE I" value="50"/>
+        <interest transactionRef="IncluirImpostoDeRenda" stakeholder="SIBE II" value="100"/>
+        <interest transactionRef="IncluirImpostoDeRenda" stakeholder="SGPe" value="100"/>
+		
+        <interest transactionRef="AlterarImpostoDeRenda" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="AlterarImpostoDeRenda" stakeholder="SIBE II" value="100"/>
+        <interest transactionRef="AlterarImpostoDeRenda" stakeholder="SGPe" value="50"/>
+		
+        <interest transactionRef="ExcluirImpostoDeRenda" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="ExcluirImpostoDeRenda" stakeholder="SIBE II" value="75"/>
+        <interest transactionRef="ExcluirImpostoDeRenda" stakeholder="SGPe" value="100"/>
+		
+        <interest transactionRef="PesquisarImpostoDeRenda" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="PesquisarImpostoDeRenda" stakeholder="SIBE II" value="100"/>
+        <interest transactionRef="PesquisarImpostoDeRenda" stakeholder="SGPe" value="100"/>
+		
+        <interest transactionRef="DetalharImpostoDeRenda" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="DetalharImpostoDeRenda" stakeholder="SIBE II" value="50"/>
+        <interest transactionRef="DetalharImpostoDeRenda" stakeholder="SGPe" value="50"/>
+		
+		
+        <interest transactionRef="IncluirAliquotaImpostoDeRenda" stakeholder="SIBE I" value="50"/>
+        <interest transactionRef="IncluirAliquotaImpostoDeRenda" stakeholder="SIBE II" value="100"/>
+        <interest transactionRef="IncluirAliquotaImpostoDeRenda" stakeholder="SIBE II" value="100"/>
+		
+		<interest transactionRef="AlterarAliquotaImpostoDeRenda" stakeholder="SIBE I" value="50"/>
+        <interest transactionRef="AlterarAliquotaImpostoDeRenda" stakeholder="SIBE II" value="100"/>
+        <interest transactionRef="AlterarAliquotaImpostoDeRenda" stakeholder="SGPe" value="50"/>
+        
+        <interest transactionRef="ExcluirAliquotaImpostoDeRenda" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="ExcluirAliquotaImpostoDeRenda" stakeholder="SIBE II" value="75"/>
+        <interest transactionRef="ExcluirAliquotaImpostoDeRenda" stakeholder="SGPe" value="100"/>
+		
+        <interest transactionRef="DetalharAliquotaImpostoDeRenda" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="DetalharAliquotaImpostoDeRenda" stakeholder="SIBE II" value="50"/>
+        <interest transactionRef="DetalharAliquotaImpostoDeRenda" stakeholder="SGPe" value="50"/>
+		
+        <interest transactionRef="IncluirImpostoDeRendaExterior" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="AlterarImpostoDeRendaExterior" stakeholder="SIBE II" value="25"/>
+		
+        <interest transactionRef="ExcluirImpostoDeRendaExterior" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="PesquisarImpostoDeRendaExterior" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="DetalharImpostoDeRendaExterior" stakeholder="SIBE II" value="75"/>
+		
+		
+        <interest transactionRef="IncluirSalarioFamilia" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="AlterarSalarioFamilia" stakeholder="SIBE II" value="50"/>
+		
+        <interest transactionRef="ExcluirSalarioFamilia" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="PesquisarSalarioFamilia" stakeholder="SIBE II" value="50"/>
+		
+        <interest transactionRef="DetalharSalarioFamilia" stakeholder="SIBE II" value="25"/>
+		
+		
+        <interest transactionRef="IncluirFaixaSalarioFamilia" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="AlterarFaixaSalarioFamilia" stakeholder="SIBE II" value="50"/>
+		
+        <interest transactionRef="ExcluirFaixaSalarioFamilia" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="DetalharFaixaSalarioFamilia" stakeholder="SIBE II" value="25"/>
+		
+        <interest transactionRef="IncluirParametroLegal" stakeholder="SIBE I" value="100"/>
+		<interest transactionRef="IncluirParametroLegal" stakeholder="SIBE II" value="100"/>
+		<interest transactionRef="IncluirParametroLegal" stakeholder="SGPe" value="100"/>
+		
+        <interest transactionRef="AlterarParametroLegal" stakeholder="SIBE I" value="75"/>
+        <interest transactionRef="AlterarParametroLegal" stakeholder="SIBE II" value="75"/>
+        <interest transactionRef="AlterarParametroLegal" stakeholder="SGPe" value="75"/>
+		
+        <interest transactionRef="ExcluirParametroLegal" stakeholder="SIBE I" value="100"/>
+        <interest transactionRef="ExcluirParametroLegal" stakeholder="SIBE II" value="100"/>
+        <interest transactionRef="ExcluirParametroLegal" stakeholder="SGPe" value="100"/>
+		
+        <interest transactionRef="PesquisarParametrosLegais" stakeholder="SIBE I" value="100"/>
+        <interest transactionRef="PesquisarParametrosLegais" stakeholder="SIBE II" value="100"/>
+        <interest transactionRef="PesquisarParametrosLegais" stakeholder="SGPe" value="100"/>
+		
+        <interest transactionRef="DetalharParametrosLegais" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="DetalharParametrosLegais" stakeholder="SIBE II" value="75"/>
+        <interest transactionRef="DetalharParametrosLegais" stakeholder="SGPe" value="50"/>
+		
+        <interest transactionRef="IncluirPrevalenciaConsignacao" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="IncluirPrevalenciaConsignacao" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="AlterarPrevalenciaConsginacao" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="AlterarPrevalenciaConsginacao" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="ExcluirPrevalenciaConsignacao" stakeholder="SIBE II" value="50"/>
+		
+        <interest transactionRef="PesquisarPrevalenciaConsignacao" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="PesquisarPrevalenciaConsignacao" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="DetalharPrevalenciaConsignacao" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="DetalharPrevalenciaConsignacao" stakeholder="SIBE II" value="50"/>
+		
+        <interest transactionRef="DetalharVigenciaPrevalenciaConsignacao" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="DetalharVigenciaPrevalenciaConsignacao" stakeholder="SIBE II" value="75"/>
+		
+        <interest transactionRef="IncluirIndiceReajusteRGPS" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="AlterarIndiceReajusteRGPS" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="ExcluirIndiceReajusteRGPS" stakeholder="SIBE II" value="50"/>
+		
+        <interest transactionRef="PesquisarIndiceReajusteRGPS" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="PesquisarIndiceReajusteRGPS" stakeholder="SIBE II" value="100"/>
+		
+		<interest transactionRef="DetalharIndiceReajusteRGPS" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="DetalharIndiceReajusteRGPS" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="IncluirTeto" stakeholder="SIBE I" value="50"/>
+        <interest transactionRef="IncluirTeto" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="AlterarTeto" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="AlterarTeto" stakeholder="SIBE II" value="50"/>
+		
+        <interest transactionRef="ExcluirTeto" stakeholder="SIBE I" value="50"/>
+        <interest transactionRef="ExcluirTeto" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="PesquisarTeto" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="PesquisarTeto" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="DetalharTeto" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="DetalharTeto" stakeholder="SIBE II" value="75"/>
+		
+        <interest transactionRef="IncluirTipoTeto" stakeholder="SIBE I" value="50"/>
+        <interest transactionRef="IncluirTipoTeto" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="AlterarTipoTeto" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="AlterarTipoTeto" stakeholder="SIBE II" value="50"/>
+		
+        <interest transactionRef="ExcluirTipoTeto" stakeholder="SIBE I" value="50"/>
+        <interest transactionRef="ExcluirTipoTeto" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="PesquisarTipoTeto" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="PesquisarTipoTeto" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="DetalharTipoTeto" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="DetalharTipoTeto" stakeholder="SIBE II" value="25"/>
+		
+		<interest transactionRef="IncluirSalarioContribuicao" stakeholder="SIBE I" value="50"/>
+		<interest transactionRef="IncluirSalarioContribuicao" stakeholder="SIBE II" value="100"/>
+        <interest transactionRef="IncluirSalarioContribuicao" stakeholder="SGPe" value="100"/>
+        
+        <interest transactionRef="AlterarSalarioContribuicao" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="AlterarSalarioContribuicao" stakeholder="SIBE II" value="100"/>
+        <interest transactionRef="AlterarSalarioContribuicao" stakeholder="SGPe" value="50"/>
+		
+        <interest transactionRef="ExcluirSalarioContribuicao" stakeholder="SIBE I" value="50"/>
+        <interest transactionRef="ExcluirSalarioContribuicao" stakeholder="SIBE II" value="50"/>
+		<interest transactionRef="ExcluirSalarioContribuicao" stakeholder="SGPe" value="100"/>
+		
+        <interest transactionRef="PesquisarSalarioContribuicao" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="PesquisarSalarioContribuicao" stakeholder="SIBE II" value="50"/>
+		<interest transactionRef="PesquisarSalarioContribuicao" stakeholder="SGPe" value="50"/>
+		
+        <interest transactionRef="DetalharSalarioContribuicao" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="DetalharSalarioContribuicao" stakeholder="SIBE II" value="75"/>
+        <interest transactionRef="DetalharSalarioContribuicao" stakeholder="SGPe" value="50"/>
+		
+        <interest transactionRef="PesquisarSalarioMinimoRegionalizado" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="PesquisarSalarioMinimoRegionalizado" stakeholder="SIBE II" value="100"/>
+        <interest transactionRef="PesquisarSalarioMinimoRegionalizado" stakeholder="SGPe" value="100"/>
+		
+		<interest transactionRef="DetalharSalarioMinimoRegionalizado" stakeholder="SIBE I" value="25"/>
+		<interest transactionRef="DetalharSalarioMinimoRegionalizado" stakeholder="SIBE II" value="100"/>
+        <interest transactionRef="DetalharSalarioMinimoRegionalizado" stakeholder="SGPe" value="100"/>
+		
+        <interest transactionRef="PesquisarLocaisdeTrabalho" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="PesquisarLocaisdeTrabalho" stakeholder="SIBE II" value="100"/>
+        <interest transactionRef="PesquisarLocaisdeTrabalho" stakeholder="SGPe" value="100"/>
+		
+        <interest transactionRef="DetalharLocaisdeTrabalho" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="DetalharLocaisdeTrabalho" stakeholder="SIBE II" value="100"/>
+        <interest transactionRef="DetalharLocaisdeTrabalho" stakeholder="SGPe" value="25"/>
+		
+        <interest transactionRef="PesquisarEspecieBeneficio" stakeholder="SIBE I" value="100"/>
+        <interest transactionRef="PesquisarEspecieBeneficio" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="DetalharEspecieBeneficio" stakeholder="SIBE I" value="100"/>
+        <interest transactionRef="DetalharEspecieBeneficio" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="PesquisarTratamento" stakeholder="SIBE I" value="100"/>
+        <interest transactionRef="PesquisarTratamento" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="DetalharTratamento" stakeholder="SIBE I" value="75"/>
+        <interest transactionRef="DetalharTratamento" stakeholder="SIBE II" value="25"/>
+		
+        <interest transactionRef="PesquisarFatorAtualizacao" stakeholder="SIBE I" value="100"/>
+        <interest transactionRef="PesquisarFatorAtualizacao" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="DetalharFatorAtualizacao" stakeholder="SIBE I" value="100"/>
+        <interest transactionRef="DetalharFatorAtualizacao" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="PesquisarRubrica" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="PesquisarRubrica" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="DetalharRubrica" stakeholder="SIBE I" value="25"/>
+        <interest transactionRef="DetalharRubrica" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="PesquisarTaxaConversaoMoeda" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="DetalharTaxaConversaoMoeda" stakeholder="SIBE II" value="75"/>
+		
+        <interest transactionRef="PesquisarCotacaoFatorAtualizacao" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="DetalharCotacaoFatorAtualizacao" stakeholder="SIBE II" value="75"/>
+		
+        <interest transactionRef="PesquisarGrupoBeneficio" stakeholder="SIBE II" value="25"/>
+		
+        <interest transactionRef="DetalharGrupoBeneficio" stakeholder="SIBE II" value="25"/>
+		
+        <interest transactionRef="PesquisarCoeficienteReajustamentoBaseSM" stakeholder="SIBE II" value="50"/>
+		
+        <interest transactionRef="DetalharCoeficienteReajustamentoBaseSM" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="PesquisarIndiceReajusteBuracoNegro" stakeholder="SIBE II" value="100"/>
+		
+        <interest transactionRef="DetalharIndiceReajusteBuracoNegro" stakeholder="SIBE II" value="75"/>
+		
+        <interest transactionRef="PesquisarSalarioMinimoGrupoBenef" stakeholder="SIBE II" value="50"/>
+		
+        <interest transactionRef="DetalharSalarioMinimoGrupoBenef" stakeholder="SIBE II" value="50"/>
+    </interests>
+
+</stakeholders-interests>

@@ -1,0 +1,1490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<name>Parametros</name>
+	<data-model>
+		<ilf name="ParametrosLegais">
+			<ret name="ParametrosLegais">
+				<det name="id" primaryKey="true"/>
+				<det name="descricao"/>
+				<det name="inteiro"/>
+				<det name="data"/>
+				<det name="string"/>
+				<det name="decimal"/>
+				<det name="inicioValidade"/>
+				<det name="fimValidade"/>
+				<det name="vigencia"/>
+				<det name="tipo"/>
+			</ret>
+		</ilf>
+		<ilf name="ImpostoDeRenda">
+			<ret name="ImpostoDeRenda">
+				<det name="ID_IMPOSTO_RENDA" primaryKey="true"/>
+				<det name="ID_FUNDAMENTACAO_LEGAL" ref="FundamentacaoLegal"/>
+				<det name="CS_IR"/>
+				<det name="DT_INICIO_VIGENCIA"/>
+				<det name="DT_FIM_VIGENCIA"/>
+				<det name="VL_ABATIMENTO_MAIOR_65_ANOS"/>
+				<det name="VL_ABATIMENTO_DEPENDENTE"/>
+				<det name="DT_FIM_VALIDADE"/>
+				
+				<!-- ALIQUOTA_IMPOSTO_RENDA -->
+				<det name="ID_ALIQUOTA_IMPOSTO_RENDA" primaryKey="true"/>
+				<det name="TX_ALIQUOTA"/>
+				<det name="VL_FAIXA_INICIAL_BASE_CALCULO"/>
+				<det name="VL_FAIXA_FINAL_BASE_CALCULO"/>
+				<det name="VL_PARCELA_A_DEDUZIR"/>
+				<det name="DT_FIM_VALIDADE_ALICOTA"/>
+			</ret>
+		</ilf>
+		<ilf name="ImpostoDeRendaExterior">
+			<ret name="ImpostoDeRendaExterior">
+				<det name="ID_IMPOSTO_RENDA_EXTERIOR" primaryKey="true"/>
+				<det name="DT_INICIO_VIGENCIA"/>
+				<det name="DT_FIM_VIGENCIA"/>
+				<det name="TX_ALIQUOTA_IR_EXTERIOR"/>
+				<det name="ID_FUNDAMENTACAO_LEGAL" ref="FundamentacaoLegal"/>
+			</ret>
+		</ilf>
+		<ilf name="FundamentacaoLegal">
+			<ret name="FundamentacaoLegal">
+				<det name="ID_FUNDAMENTACAO_LEGAL" primaryKey="true"/>
+				<det name="NU_FUNDAMENTACAO_LEGAL"/>
+				<det name="ID_AUTORIDADE_EMISSORA" ref="EntidadeEmissora" dataModelElement="FundamentacaoLegal"/>
+				<det name="ID_REF_FUNDAMENTACAO_LEGAL" ref="ReferenciaFundamentacaoLegal" dataModelElement="FundamentacaoLegal"/>
+				<det name="ID_TIPO_FUNDAMENTACAO_LEGAL" ref="TipoFundamentacaoLegal" dataModelElement="FundamentacaoLegal"/>
+				<det name="DT_EMISSAO_FUNDAMENTACAO_LEGAL"/>
+				<det name="DT_PUBL_FUNDAMENTACAO_LEGAL"/>
+				<det name="DT_INI_COMPETENCIA_DIB"/>
+				<det name="DT_FIM_COMPETENCIA_DIB"/>
+				<det name="DT_FIM_VALIDADE"/>
+			</ret>
+			<ret name="TipoFundamentacaoLegal">
+				<det name="ID_TIPO_FUNDAMENTACAO_LEGAL" primaryKey="true"/>
+				<det name="TE_TIPO_FUNDAMENTACAO_LEGAL"/>
+				<det name="SG_TIPO_FUNDAMENTACAO_LEGAL"/>
+				<det name="DT_FIM_VALIDADE"/>
+			</ret>
+			<ret name="ReferenciaFundamentacaoLegal">
+				<det name="ID_REF_FUNDAMENTACAO_LEGAL" primaryKey="true"/>
+				<det name="TE_REF_FUNDAMENTACAO_LEGAL"/>
+				<det name="DT_FIM_VALIDADE"/>
+			</ret>
+			<ret name="EntidadeEmissora">
+				<det name="ID_AUTORIDADE_EMISSORA" primaryKey="true"/>
+				<det name="SG_AUTORIDADE_EMISSORA"/>
+				<det name="TE_AUTORIDADE_EMISSORA"/>
+				<det name="DT_FIM_VALIDADE"/>
+			</ret>
+		</ilf>
+		<ilf name="PrevalenciaConsignacao">
+			<ret name="PrevalenciaConsignacao">
+				<det name="ID_PREVALENCIA_CONSIGNACAO"  primaryKey="true"/>
+				<det name="NU_ORDEM_PREVALENCIA"/>
+				<det name="IN_DESC_EXCLUSIVO_DECIMO_TERC"/>
+				<det name="CS_RUBRICA"/>
+				<det name="ID_VIGENCIA_PREVAL_CONSIGNACAO"  primaryKey="true"/>
+				
+				<!-- Vigencia Prevalencia Consignação -->
+				<det name="DT_INICIO_VIGENCIA"/>
+				<det name="DT_FIM_VIGENCIA"/>
+
+			</ret>
+		</ilf>
+		<ilf name="SalarioFamilia">
+			<ret name="SalarioFamilia">
+				<det name="ID_SALARIO_FAMILIA" primaryKey="true"/>
+				<det name="DT_FIM_VIGENCIA"/>
+				<det name="DT_INICIO_VIGENCIA"/>
+				<det name="ID_FUNDAMENTACAO_LEGAL" ref="FundamentacaoLegal"/>
+				<det name="ID_FAIXA_SALARIO_FAMILIA" primaryKey="true"/>
+				
+				<!-- Faixa Salario Familia -->
+				<det name="VL_FAIXA_INICIAL_BASE_CALCULO"/>
+				<det name="VL_FAIXA_FINAL_BASE_CALCULO"/>
+				<det name="VL_SALARIO_FAMILIA"/>
+			</ret>
+		</ilf>
+		<ilf name="IndiceDeReajusteRGPS">
+			<ret name="IndiceDeReajusteRGPS">
+				<det name="ID_INDICE_REAJUSTAMENTO_RGPS" primaryKey="true"/>
+				<det name="DT_COMPETENCIA"/>
+				<det name="DT_INICIO_VIGENCIA"/>
+				<det name="DT_FIM_VIGENCIA"/>
+				<det name="VL_INDICE"/>
+				<det name="VL_MR_MINIMO"/>
+				<det name="VL_MR_MAXIMO"/>
+				<det name="VL_ACRESCIMO"/>
+				<det name="ID_FUNDAMENTACAO_LEGAL" ref="FundamentacaoLegal"/>
+			</ret>
+		</ilf>
+		<ilf name="Teto">
+			<ret name="Teto">			
+				<det name="ID_TETO" primaryKey="true"/>
+				<det name="ID_TIPO_TETO" primaryKey="true"/>
+				<det name="VL_TETO"/>
+				<det name="VL_PISO"/>
+				<det name="DT_INICIO_VIGENCIA"/>
+				<det name="DT_FIM_VIGENCIA"/>
+				<det name="DT_FIM_VALIDADE"/>
+
+				<!-- Tipo Teto -->
+				<det name="TE_TIPO_TETO"/>
+				<det name="DT_INICIO_VIGENCIA_TIPO"/>
+				<det name="DT_FIM_VIGENCIA_TIPO"/>
+				<det name="DT_VALIDADE_TIPO"/>
+			</ret>
+		</ilf>
+		<ilf name="SalarioMinimoGrupoBeneficio">
+			<ret name="SalarioMinimoGrupoBeneficio">
+				<det name="ID_SAL_MIN_GRUPO_BENEFICIO"  primaryKey="true"/>
+				<det name="DT_INI_VIGENCIA"/>
+				<det name="VL_SAL_MIN_GRUPO_BENEFICIO"/>
+				<det name="DT_FIM_VIGENCIA"/>
+				<det name="CS_SALARIO_MINIMO"/>
+				<det name="ID_LOCAL_TRABALHO"  primaryKey="true"/>
+				<det name="ID_GRUPO_BENEFICIO"  primaryKey="true"/>
+				<det name="DT_FIM_VALIDADE"/>
+				
+			</ret>
+			<ret name="GrupoBeneficio">
+				<det name="NM_GRUPO_BENEFICIO"/>
+				<det name="ID_GRUPO_BENEFICIO"  primaryKey="true"/>
+			</ret>
+		</ilf>
+		<ilf name="CoeficienteReajustamentoBaseSM">
+			<ret name="CoeficienteReajustamentoBaseSM">
+				<det name="ID_COEFICIENTE_REAJ_BASE_SM" primaryKey="true"/>
+				<det name="ID_ESPECIE_BENEF"/>
+				<det name="VL_COEFICIENTE"/>
+				<det name="DT_INICIO_VIGENCIA"/>
+				<det name="DT_FIM_VIGENCIA"/>
+				<det name="CS_TRATAMENTO"/>
+			</ret>
+		</ilf>
+		<ilf name="IndiceReajusteBuracoNegro">
+			<ret name="IndiceReajusteBuracoNegro">
+				<det name="ID_INDICE_REAJ_BURACO_NEGRO"  primaryKey="true"/>
+				<det name="ID_FUNDAMENTACAO_LEGAL" ref="FundamentacaoLegal"/>
+				<det name="DT_COMPETENCIA"/>
+				<det name="DT_INICIO_VIGENCIA"/>
+				<det name="DT_FIM_VIGENCIA"/>
+				<det name="VL_INDICE"/>
+			</ret>
+		</ilf>
+		
+		<ilf name="SalarioContribuicao">
+			<ret name="SalarioContribuicao">
+				<det name="ID_UF_PREV"  ref="UF"/>
+				<det name="DT_COMPETENCIA"/>
+				<det name="VL_SALARIO_CONTRIB"/>
+				<det name="VL_SALARIO_CONTRIB_MAX"/>
+				<det name="NU_CLASSE"/>
+				<det name="VL_CONTRIB_AUTONOMO"/>
+				<det name="VL_CONTRIB_EMPR"/>
+				<det name="TX_ALIQUOTA_AUTONOMO"/>
+				<det name="TX_ALIQUOTA_EMPR"/>
+				<det name="DT_INIC_VALI"/>
+				<det name="DT_FIM_VALI"/>
+			</ret>
+		</ilf>
+		<eif name="GERID">
+			<ret name="GERID">
+				<det name="login"/>
+				<det name="senha"/>
+				<det name="email"/>
+			</ret>
+		</eif>
+		<eif name="UF">
+			<ret name="UF">
+				<det name="TE_UF"/>
+				<det name="CS_UF"/>
+			</ret>
+		</eif>
+		<eif name="Rubrica">
+			<ret name="Rubrica">
+				<det name="CS_RUBRICA" primaryKey="true" hasSemanticMeaning="true"/>
+				<det name="TE_RUBRICA"/>
+				<det name="DT_FIM_VALIDADE"/>
+			</ret>
+		</eif>
+		<eif name="SalarioMinimoRegionalizado">
+			<ret name="SalarioMinimoRegionalizado">
+				<det name="ID_SALARIO_MINIMO_REGIONAL"  primaryKey="true"/>
+				<det name="ID_LOCAL_TRABALHO" ref="LocalDeTrabalho"/>
+				<det name="DT_COMPETENCIA"/>
+				<det name="DT_INICIO_VIGENCIA"/>
+				<det name="VL_SALARIO_MINIMO"/>
+				<det name="VL_INDICE"/>
+				<det name="DT_FIM_VALIDADE"/>
+			</ret>
+		</eif>
+		<eif name="LocalDeTrabalho">
+			<ret name="LocalDeTrabalho">
+				<det name="ID_LOCAL_TRABALHO"  primaryKey="true"/>
+				<det name="NM_LOCAL_TRABALHO"/>
+				<det name="DT_FIM_VALIDADE"/>
+			</ret>
+		</eif>
+		<eif name="EspecieBeneficio">
+			<ret name="EspecieBeneficio">
+				<det name="ID_ESPECIE_BENEF"  primaryKey="true"/>
+				<det name="ID_CENTRO_CUSTO"/>
+				<det name="ID_ELEM_CONTABIL"/>
+				<det name="IN_ELEGIVEL_EMPREST_CONSIGNADO"/>
+				<det name="DT_INIC_VALI"/>
+				<det name="TE_ESPECIE_BENEF"/>
+				<det name="IN_PREST_UNICA"/>
+				<det name="IN_ATIVA"/>
+				<det name="CS_CATEGORIA"/>
+				<det name="IN_MANTIDO_SIBE"/>
+				<det name="DT_FIM_VALIDADE"/>
+				
+			</ret>
+		</eif>
+		<eif name="Tratamento">
+			<ret name="Tratamento">
+				<det name="CS_TRATAMENTO" primaryKey="true" hasSemanticMeaning="true"/>
+				<det name="TE_TRATAMENTO"/>
+				<det name="DT_FIM_VALIDADE"/>
+				
+			</ret>
+		</eif>
+		<eif name="FatorDeAtualizacao">
+			<ret name="FatorDeAtualizacao">
+				<det name="ID_FATOR_ATUALIZACAO" primaryKey="true"/>
+				<det name="SG_FATOR_ATUALIZACAO"/>
+				<det name="TE_FATOR_ATUALIZACAO"/>
+				<det name="CS_NATUREZA_FATOR"/>
+				<det name="DT_INICIO_VALIDADE"/>
+				<det name="DT_FIM_VALIDADE"/>
+				<det name="TE_OBSERVACAO"/>
+			</ret>
+		</eif>
+		<eif name="TaxaConversaoMoeda">
+			<ret name="TaxaConversaoMoeda">
+				<det name="ID_TAXA_CONVERSAO_MOEDA" primaryKey="true"/>
+				<det name="TX_CONVERSAO"/>
+				<det name="DT_FIM_PERIODO_CREDITO"/>
+				<det name="DT_INICIO_PERIODO_CREDITO"/>
+				<det name="DT_FIM_DIB"/>
+				<det name="DT_INICIO_DIB"/>
+			</ret>
+		</eif>
+		<eif name="CotacaoValorAtualizacao">
+			<ret name="CotacaoValorAtualizacao">
+				<det name="ID_COTACAO_FATOR_ATUALIZ" primaryKey="true"/>
+				<det name="TX_COTACAO"/>
+				<det name="DT_INICIO_VALIDADE"/>
+				<det name="DT_FIM_VALIDADE"/>
+				<det name="CS_PERIODICIDADE"/>
+				<det name="ID_FATOR_ATUALIZACAO" ref="FatorDeAtualizacao"/>
+			</ret>
+		</eif>
+	</data-model>
+	<transaction-model>
+		<!-- Tipo Fundamentação Legal -->
+		<transaction name="IncluirTipoFundamentacaoLegal" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="TipoFundamentacaoLegal" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="AlterarTipoFundamentacaoLegal" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="TipoFundamentacaoLegal" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirTipoFundamentacaoLegal"/>
+				<dependency ref="PesquisarTipoFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirTipoFundamentacaoLegal" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="TipoFundamentacaoLegal" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirTipoFundamentacaoLegal"/>
+				<dependency ref="PesquisarTipoFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="PesquisarTipoFundamentacaoLegal" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="TipoFundamentacaoLegal" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirTipoFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharTipoFundamentacaoLegal" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="TipoFundamentacaoLegal" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirTipoFundamentacaoLegal"/>
+				<dependency ref="PesquisarTipoFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		
+		<!-- Referência Fundamentação Legal -->
+		<transaction name="IncluirReferenciaFundamentacaoLegal" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="ReferenciaFundamentacaoLegal" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="AlterarReferenciaFundamentacaoLegal" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="ReferenciaFundamentacaoLegal" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirReferenciaFundamentacaoLegal"/>
+				<dependency ref="PesquisarReferenciaFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirReferenciaFundamentacaoLegal" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="ReferenciaFundamentacaoLegal" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirReferenciaFundamentacaoLegal"/>
+				<dependency ref="PesquisarReferenciaFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="PesquisarReferenciaFundamentacaoLegal" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="ReferenciaFundamentacaoLegal" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirReferenciaFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharReferenciaFundamentacaoLegal" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="ReferenciaFundamentacaoLegal" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirReferenciaFundamentacaoLegal"/>
+				<dependency ref="PesquisarReferenciaFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		
+		<!-- Autoridade Emissora -->
+		<transaction name="IncluirAutoridadeEmissora" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="AlterarAutoridadeEmissora" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirAutoridadeEmissora"/>
+				<dependency ref="PesquisarAutoridadeEmissora"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirAutoridadeEmissora" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirAutoridadeEmissora"/>
+				<dependency ref="PesquisarAutoridadeEmissora"/>
+			</dependencies>
+		</transaction>
+		<transaction name="PesquisarAutoridadeEmissora" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirAutoridadeEmissora"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharAutoridadeEmissora" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirAutoridadeEmissora"/>
+				<dependency ref="PesquisarAutoridadeEmissora"/>
+			</dependencies>
+		</transaction>
+		
+		<!-- Fundamentação Legal -->
+		<transaction name="IncluirFundamentacaoLegal" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="FundamentacaoLegal" useAllDets="true">
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="ReferenciaFundamentacaoLegal">
+					<det name="TE_REF_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="TipoFundamentacaoLegal">
+					<det name="TE_TIPO_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirTipoFundamentacaoLegal"/>
+				<dependency ref="IncluirAutoridadeEmissora"/>
+				<dependency ref="IncluirReferenciaFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="AlterarFundamentacaoLegal" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="FundamentacaoLegal" useAllDets="true">
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="ReferenciaFundamentacaoLegal">
+					<det name="TE_REF_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="TipoFundamentacaoLegal">
+					<det name="TE_TIPO_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirFundamentacaoLegal"/>
+				<dependency ref="PesquisarFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirFundamentacaoLegal" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="FundamentacaoLegal" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirFundamentacaoLegal"/>
+				<dependency ref="PesquisarFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="PesquisarFundamentacaoLegal" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="FundamentacaoLegal" useAllDets="true">
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="ReferenciaFundamentacaoLegal">
+					<det name="TE_REF_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="TipoFundamentacaoLegal">
+					<det name="TE_TIPO_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharFundamentacaoLegal" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="FundamentacaoLegal" ret="FundamentacaoLegal" useAllDets="true">
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="ReferenciaFundamentacaoLegal">
+					<det name="TE_REF_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="TipoFundamentacaoLegal">
+					<det name="TE_TIPO_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirFundamentacaoLegal"/>
+				<dependency ref="PesquisarFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		
+		
+		<!-- ImpostoDeRenda -->
+		<transaction name="IncluirImpostoDeRenda" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="ImpostoDeRenda" ret="ImpostoDeRenda">
+					<det name="ID_FUNDAMENTACAO_LEGAL"/>
+					<det name="CS_IR"/>
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="VL_ABATIMENTO_MAIOR_65_ANOS"/>
+					<det name="VL_ABATIMENTO_DEPENDENTE"/>
+					<det name="DT_FIM_VALIDADE"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="FundamentacaoLegal">
+					<det name="NU_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="AlterarImpostoDeRenda" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="ImpostoDeRenda" ret="ImpostoDeRenda">
+					<det name="ID_FUNDAMENTACAO_LEGAL"/>
+					<det name="CS_IR"/>
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="VL_ABATIMENTO_MAIOR_65_ANOS"/>
+					<det name="VL_ABATIMENTO_DEPENDENTE"/>
+					<det name="DT_FIM_VALIDADE"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="FundamentacaoLegal">
+					<det name="NU_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirImpostoDeRenda"/>
+				<dependency ref="PesquisarImpostoDeRenda"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirImpostoDeRenda" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="ImpostoDeRenda" ret="ImpostoDeRenda">
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirImpostoDeRenda"/>
+				<dependency ref="PesquisarImpostoDeRenda"/>
+			</dependencies>
+		</transaction>
+		<transaction name="PesquisarImpostoDeRenda" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="ImpostoDeRenda" ret="ImpostoDeRenda">
+					<det name="ID_FUNDAMENTACAO_LEGAL"/>
+					<det name="CS_IR"/>
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="VL_ABATIMENTO_MAIOR_65_ANOS"/>
+					<det name="VL_ABATIMENTO_DEPENDENTE"/>
+					<det name="DT_FIM_VALIDADE"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="FundamentacaoLegal">
+					<det name="NU_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirImpostoDeRenda"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharImpostoDeRenda" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="ImpostoDeRenda" ret="ImpostoDeRenda">
+					<det name="ID_FUNDAMENTACAO_LEGAL"/>
+					<det name="CS_IR"/>
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="VL_ABATIMENTO_MAIOR_65_ANOS"/>
+					<det name="VL_ABATIMENTO_DEPENDENTE"/>
+					<det name="DT_FIM_VALIDADE"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="FundamentacaoLegal">
+					<det name="NU_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirImpostoDeRenda"/>
+				<dependency ref="PesquisarImpostoDeRenda"/>
+			</dependencies>
+		</transaction>
+		
+		
+		<!-- Aliquota Imposto De Renda -->
+		<transaction name="IncluirAliquotaImpostoDeRenda" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="ImpostoDeRenda" ret="ImpostoDeRenda">
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="TX_ALIQUOTA"/>
+					<det name="VL_FAIXA_INICIAL_BASE_CALCULO"/>
+					<det name="VL_FAIXA_FINAL_BASE_CALCULO"/>
+					<det name="VL_PARCELA_A_DEDUZIR"/>
+					<det name="DT_FIM_VALIDADE"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="FundamentacaoLegal">
+					<det name="NU_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirImpostoDeRenda"/>
+			</dependencies>
+		</transaction>
+		<transaction name="AlterarAliquotaImpostoDeRenda" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="ImpostoDeRenda" ret="ImpostoDeRenda">
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="TX_ALIQUOTA"/>
+					<det name="VL_FAIXA_INICIAL_BASE_CALCULO"/>
+					<det name="VL_FAIXA_FINAL_BASE_CALCULO"/>
+					<det name="VL_PARCELA_A_DEDUZIR"/>
+					<det name="DT_FIM_VALIDADE"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="FundamentacaoLegal">
+					<det name="NU_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirAliquotaImpostoDeRenda"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirAliquotaImpostoDeRenda" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="ImpostoDeRenda" ret="ImpostoDeRenda">
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="VL_FAIXA_INICIAL_BASE_CALCULO"/>
+					<det name="VL_FAIXA_FINAL_BASE_CALCULO"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="FundamentacaoLegal">
+					<det name="NU_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirAliquotaImpostoDeRenda"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharAliquotaImpostoDeRenda" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="ImpostoDeRenda" ret="ImpostoDeRenda">
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="TX_ALIQUOTA"/>
+					<det name="VL_FAIXA_INICIAL_BASE_CALCULO"/>
+					<det name="VL_FAIXA_FINAL_BASE_CALCULO"/>
+					<det name="VL_PARCELA_A_DEDUZIR"/>
+					<det name="DT_FIM_VALIDADE"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="FundamentacaoLegal">
+					<det name="NU_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirAliquotaImpostoDeRenda"/>
+			</dependencies>
+		</transaction>
+		
+		
+		<!-- Imposto De Renda Exterior -->
+		<transaction name="IncluirImpostoDeRendaExterior" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="ImpostoDeRendaExterior" ret="ImpostoDeRendaExterior" useAllDets="true">
+				</ftr><ftr name="FundamentacaoLegal" ret="FundamentacaoLegal">
+					<det name="NU_FUNDAMENTACAO_LEGAL"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="AlterarImpostoDeRendaExterior" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="ImpostoDeRendaExterior" ret="ImpostoDeRendaExterior" useAllDets="true">
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirImpostoDeRendaExterior"/>
+				<dependency ref="PesquisarImpostoDeRendaExterior"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirImpostoDeRendaExterior" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="ImpostoDeRendaExterior" ret="ImpostoDeRendaExterior">
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirImpostoDeRendaExterior"/>
+				<dependency ref="PesquisarImpostoDeRendaExterior"/>
+			</dependencies>
+		</transaction>
+		<transaction name="PesquisarImpostoDeRendaExterior" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="ImpostoDeRendaExterior" ret="ImpostoDeRendaExterior">
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="TX_ALIQUOTA_IR_EXTERIOR"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirImpostoDeRendaExterior"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharImpostoDeRendaExterior" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="ImpostoDeRendaExterior" ret="ImpostoDeRendaExterior" useAllDets="true">
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirImpostoDeRendaExterior"/>
+				<dependency ref="PesquisarImpostoDeRendaExterior"/>
+			</dependencies>
+		</transaction>
+
+		<!-- Salário Família -->
+		<transaction name="IncluirSalarioFamilia" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="SalarioFamilia" ret="SalarioFamilia">
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="DT_INICIO_VIGENCIA"/>
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="AlterarSalarioFamilia" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="SalarioFamilia" ret="SalarioFamilia" useAllDets="true">
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirSalarioFamilia"/>
+				<dependency ref="PesquisarSalarioFamilia"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirSalarioFamilia" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="SalarioFamilia" ret="SalarioFamilia">
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="DT_INICIO_VIGENCIA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirSalarioFamilia"/>
+				<dependency ref="PesquisarSalarioFamilia"/>
+			</dependencies>
+		</transaction>
+		<transaction name="PesquisarSalarioFamilia" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="SalarioFamilia" ret="SalarioFamilia" useAllDets="true">
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="FundamentacaoLegal" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirSalarioFamilia"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharSalarioFamilia" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="SalarioFamilia" ret="SalarioFamilia" useAllDets="true">
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirSalarioFamilia"/>
+				<dependency ref="PesquisarSalarioFamilia"/>
+			</dependencies>
+		</transaction>
+		
+		
+		<!-- Faixa Salário Família -->
+		<transaction name="IncluirFaixaSalarioFamilia" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="SalarioFamilia" ret="SalarioFamilia" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirSalarioFamilia"/>
+			</dependencies>
+		</transaction>
+		<transaction name="AlterarFaixaSalarioFamilia" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="SalarioFamilia" ret="SalarioFamilia" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirFaixaSalarioFamilia"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirFaixaSalarioFamilia" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="SalarioFamilia" ret="SalarioFamilia">
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="VL_FAIXA_INICIAL_BASE_CALCULO"/>
+					<det name="VL_FAIXA_FINAL_BASE_CALCULO"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirFaixaSalarioFamilia"/>
+			</dependencies>
+		</transaction>
+		
+		<transaction name="DetalharFaixaSalarioFamilia" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="SalarioFamilia" ret="SalarioFamilia" useAllDets="true">
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirFaixaSalarioFamilia"/>
+			</dependencies>
+		</transaction>
+		
+		
+		<!-- Parâmetro Legal -->
+		<transaction name="IncluirParametroLegal" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="ParametrosLegais" ret="ParametrosLegais" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="AlterarParametroLegal" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="ParametrosLegais" ret="ParametrosLegais" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirParametroLegal"/>
+				<dependency ref="PesquisarParametrosLegais"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirParametroLegal" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="ParametrosLegais" ret="ParametrosLegais">
+					<det name="descricao"/>
+					<det name="inicioValidade"/>
+					<det name="fimValidade"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirParametroLegal"/>
+				<dependency ref="PesquisarParametrosLegais"/>
+			</dependencies>
+		</transaction>
+		<transaction name="PesquisarParametrosLegais" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="ParametrosLegais" ret="ParametrosLegais">
+					<det name="descricao"/>
+					<det name="inicioValidade"/>
+					<det name="fimValidade"/>				
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirParametroLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharParametrosLegais" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="ParametrosLegais" ret="ParametrosLegais" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirParametroLegal"/>
+				<dependency ref="PesquisarParametrosLegais"/>
+			</dependencies>
+		</transaction>
+		
+		
+		<!-- Prevalência Consignação -->
+		<transaction name="IncluirPrevalenciaConsignacao" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="PrevalenciaConsignacao" ret="PrevalenciaConsignacao" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="AlterarPrevalenciaConsginacao" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="PrevalenciaConsignacao" ret="PrevalenciaConsignacao" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirPrevalenciaConsignacao"/>
+				<dependency ref="PesquisarPrevalenciaConsignacao"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirPrevalenciaConsignacao" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="PrevalenciaConsignacao" ret="PrevalenciaConsignacao" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirPrevalenciaConsignacao"/>
+				<dependency ref="PesquisarPrevalenciaConsignacao"/>
+			</dependencies>
+		</transaction>
+		<transaction name="PesquisarPrevalenciaConsignacao" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="PrevalenciaConsignacao" ret="PrevalenciaConsignacao" useAllDets="true">
+				</ftr>
+				<ftr name="Rubrica" ret="Rubrica">
+					<det name="CS_RUBRICA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirPrevalenciaConsignacao"/>
+				<dependency ref="PesquisarPrevalenciaConsignacao"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharPrevalenciaConsignacao" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="PrevalenciaConsignacao" ret="PrevalenciaConsignacao" useAllDets="true">
+				</ftr>
+				<ftr name="Rubrica" ret="Rubrica">
+					<det name="CS_RUBRICA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirPrevalenciaConsignacao"/>
+				<dependency ref="PesquisarPrevalenciaConsignacao"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharVigenciaPrevalenciaConsignacao" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="PrevalenciaConsignacao" ret="PrevalenciaConsignacao">
+					<det name="CS_RUBRICA"/>
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+				</ftr>
+				<ftr name="Rubrica" ret="Rubrica">
+					<det name="CS_RUBRICA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="DetalharPrevalenciaConsignacao"/>
+			</dependencies>
+		</transaction>
+		
+		
+		<!-- Índice de Reajuste -->
+		<transaction name="IncluirIndiceReajusteRGPS" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="IndiceDeReajusteRGPS" ret="IndiceDeReajusteRGPS" useAllDets="true">
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirFundamentacaoLegal"/>
+			</dependencies>
+		</transaction>
+		<transaction name="AlterarIndiceReajusteRGPS" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="IndiceDeReajusteRGPS" ret="IndiceDeReajusteRGPS" useAllDets="true">
+				</ftr>
+				<ftr name="FundamentacaoLegal" ret="EntidadeEmissora">
+					<det name="TE_AUTORIDADE_EMISSORA"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirIndiceReajusteRGPS"/>
+				<dependency ref="PesquisarIndiceReajusteRGPS"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirIndiceReajusteRGPS" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="IndiceDeReajusteRGPS" ret="IndiceDeReajusteRGPS" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirIndiceReajusteRGPS"/>
+				<dependency ref="PesquisarIndiceReajusteRGPS"/>
+			</dependencies>
+		</transaction>
+		<transaction name="PesquisarIndiceReajusteRGPS" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="IndiceDeReajusteRGPS" ret="IndiceDeReajusteRGPS" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirIndiceReajusteRGPS"/>
+				<dependency ref="PesquisarIndiceReajusteRGPS"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharIndiceReajusteRGPS" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="IndiceDeReajusteRGPS" ret="IndiceDeReajusteRGPS" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirIndiceReajusteRGPS"/>
+				<dependency ref="PesquisarIndiceReajusteRGPS"/>
+			</dependencies>
+		</transaction>
+		
+		
+		<!-- Teto-->
+		<transaction name="IncluirTeto" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Teto" ret="Teto">
+					<det name="VL_TETO"/>
+					<det name="VL_PISO"/>
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="DT_FIM_VALIDADE"/>
+					<det name="TE_TIPO_TETO"/>
+					<det name="DT_INICIO_VIGENCIA_TIPO"/>
+					<det name="DT_FIM_VIGENCIA_TIPO"/>
+					<det name="DT_VALIDADE_TIPO"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirTipoTeto"/>
+			</dependencies>
+		</transaction>
+		<transaction name="AlterarTeto" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Teto" ret="Teto">
+					<det name="VL_TETO"/>
+					<det name="VL_PISO"/>
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="DT_FIM_VALIDADE"/>
+					<det name="TE_TIPO_TETO"/>
+					<det name="DT_INICIO_VIGENCIA_TIPO"/>
+					<det name="DT_FIM_VIGENCIA_TIPO"/>
+					<det name="DT_VALIDADE_TIPO"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirTeto"/>
+				<dependency ref="PesquisarTeto"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirTeto" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Teto" ret="Teto">
+					<det name="VL_TETO"/>
+					<det name="VL_PISO"/>
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="DT_FIM_VALIDADE"/>
+					<det name="TE_TIPO_TETO"/>
+					<det name="DT_INICIO_VIGENCIA_TIPO"/>
+					<det name="DT_FIM_VIGENCIA_TIPO"/>
+					<det name="DT_VALIDADE_TIPO"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirTeto"/>
+				<dependency ref="PesquisarTeto"/>
+			</dependencies>
+		</transaction>
+		<transaction name="PesquisarTeto" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Teto" ret="Teto">
+					<det name="VL_TETO"/>
+					<det name="VL_PISO"/>
+					<det name="DT_INICIO_VIGENCIA"/>
+					<det name="DT_FIM_VIGENCIA"/>
+					<det name="DT_FIM_VALIDADE"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirTeto"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharTeto" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Teto" ret="Teto" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirTeto"/>
+				<dependency ref="PesquisarTeto"/>
+			</dependencies>
+		</transaction>
+		
+		
+		<!-- Tipo Teto-->
+		<transaction name="IncluirTipoTeto" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Teto" ret="Teto">
+					<det name="TE_TIPO_TETO"/>
+					<det name="DT_INICIO_VIGENCIA_TIPO"/>
+					<det name="DT_FIM_VIGENCIA_TIPO"/>
+					<det name="DT_VALIDADE_TIPO"/>
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="AlterarTipoTeto" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Teto" ret="Teto">
+					<det name="TE_TIPO_TETO"/>
+					<det name="DT_INICIO_VIGENCIA_TIPO"/>
+					<det name="DT_FIM_VIGENCIA_TIPO"/>
+					<det name="DT_VALIDADE_TIPO"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirTipoTeto"/>
+				<dependency ref="PesquisarTipoTeto"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirTipoTeto" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Teto" ret="Teto">
+					<det name="TE_TIPO_TETO"/>
+					<det name="DT_INICIO_VIGENCIA_TIPO"/>
+					<det name="DT_FIM_VIGENCIA_TIPO"/>
+					<det name="DT_VALIDADE_TIPO"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirTipoTeto"/>
+				<dependency ref="PesquisarTipoTeto"/>
+			</dependencies>
+		</transaction>
+		<transaction name="PesquisarTipoTeto" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Teto" ret="Teto">
+					<det name="TE_TIPO_TETO"/>
+					<det name="DT_INICIO_VIGENCIA_TIPO"/>
+					<det name="DT_FIM_VIGENCIA_TIPO"/>
+					<det name="DT_VALIDADE_TIPO"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirTipoTeto"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharTipoTeto" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Teto" ret="Teto">
+					<det name="TE_TIPO_TETO"/>
+					<det name="DT_INICIO_VIGENCIA_TIPO"/>
+					<det name="DT_FIM_VIGENCIA_TIPO"/>
+					<det name="DT_VALIDADE_TIPO"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirTipoTeto"/>
+				<dependency ref="PesquisarTipoTeto"/>
+			</dependencies>
+		</transaction>
+		<transaction name="IncluirSalarioContribuicao" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="SalarioContribuicao" ret="SalarioContribuicao" useAllDets="true">
+				</ftr>
+				<ftr name="UF" ret="UF">
+					<det name="CS_UF"/>
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="AlterarSalarioContribuicao" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="SalarioContribuicao" ret="SalarioContribuicao" useAllDets="true">
+				</ftr>
+				<ftr name="UF" ret="UF">
+					<det name="CS_UF"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirSalarioContribuicao"/>
+				<dependency ref="PesquisarSalarioContribuicao"/>
+			</dependencies>
+		</transaction>
+		<transaction name="ExcluirSalarioContribuicao" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="SalarioContribuicao" ret="SalarioContribuicao" useAllDets="true">
+				</ftr>
+				<ftr name="UF" ret="UF">
+					<det name="CS_UF"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirSalarioContribuicao"/>
+				<dependency ref="PesquisarSalarioContribuicao"/>
+			</dependencies>
+		</transaction>
+		<transaction name="PesquisarSalarioContribuicao" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="SalarioContribuicao" ret="SalarioContribuicao" useAllDets="true">
+				</ftr>
+				<ftr name="UF" ret="UF">
+					<det name="CS_UF"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirSalarioContribuicao"/>
+			</dependencies>
+		</transaction>
+		<transaction name="DetalharSalarioContribuicao" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="SalarioContribuicao" ret="SalarioContribuicao" useAllDets="true">
+				</ftr>
+				<ftr name="UF" ret="UF">
+					<det name="CS_UF"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirSalarioContribuicao"/>
+				<dependency ref="PesquisarSalarioContribuicao"/>
+			</dependencies>
+		</transaction>
+		
+		
+		<!-- Salário Mínimo Regionalizado -->
+		<transaction name="PesquisarSalarioMinimoRegionalizado" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="SalarioMinimoRegionalizado" ret="SalarioMinimoRegionalizado" useAllDets="true">
+				</ftr>
+				<ftr name="LocalDeTrabalho" ret="LocalDeTrabalho">
+					<det name="NM_LOCAL_TRABALHO"/>
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="DetalharSalarioMinimoRegionalizado" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="SalarioMinimoRegionalizado" ret="SalarioMinimoRegionalizado" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="PesquisarSalarioMinimoRegionalizado"/>
+			</dependencies>
+		</transaction>
+		
+		<!-- Local Trabalho -->
+		<transaction name="PesquisarLocaisdeTrabalho" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="LocalDeTrabalho" ret="LocalDeTrabalho" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="DetalharLocaisdeTrabalho" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="LocalDeTrabalho" ret="LocalDeTrabalho" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="PesquisarLocaisdeTrabalho"/>
+			</dependencies>
+		</transaction>
+		
+		<!-- Espécie Benefício -->
+		<transaction name="PesquisarEspecieBeneficio" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="EspecieBeneficio" ret="EspecieBeneficio" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="DetalharEspecieBeneficio" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="EspecieBeneficio" ret="EspecieBeneficio" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="PesquisarEspecieBeneficio"/>
+			</dependencies>
+		</transaction>
+		
+		<!-- Tratamento -->
+		<transaction name="PesquisarTratamento" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Tratamento" ret="Tratamento" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="DetalharTratamento" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Tratamento" ret="Tratamento" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="PesquisarTratamento"/>
+			</dependencies>
+		</transaction>
+		
+		<!-- Fator Atualização -->
+		<transaction name="PesquisarFatorAtualizacao" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="FatorDeAtualizacao" ret="FatorDeAtualizacao" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="DetalharFatorAtualizacao" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="FatorDeAtualizacao" ret="FatorDeAtualizacao" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="PesquisarFatorAtualizacao"/>
+			</dependencies>
+		</transaction>
+		
+		<!-- Rubrica -->
+		<transaction name="PesquisarRubrica" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Rubrica" ret="Rubrica" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="DetalharRubrica" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Rubrica" ret="Rubrica" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="PesquisarRubrica"/>
+			</dependencies>
+		</transaction>
+		
+		<!-- Taxa Conversão Moeda -->
+		<transaction name="PesquisarTaxaConversaoMoeda" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="TaxaConversaoMoeda" ret="TaxaConversaoMoeda" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="DetalharTaxaConversaoMoeda" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="TaxaConversaoMoeda" ret="TaxaConversaoMoeda" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="PesquisarTaxaConversaoMoeda"/>
+			</dependencies>
+		</transaction>
+		
+		<!-- Cotação Fator Atualização -->
+		<transaction name="PesquisarCotacaoFatorAtualizacao" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="CotacaoValorAtualizacao" ret="CotacaoValorAtualizacao" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="DetalharCotacaoFatorAtualizacao" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="CotacaoValorAtualizacao" ret="CotacaoValorAtualizacao" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="PesquisarCotacaoFatorAtualizacao"/>
+			</dependencies>
+		</transaction>
+		
+		<!-- Grupo Benefício -->
+		<transaction name="PesquisarGrupoBeneficio" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="SalarioMinimoGrupoBeneficio" ret="GrupoBeneficio" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="DetalharGrupoBeneficio" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="SalarioMinimoGrupoBeneficio" ret="GrupoBeneficio" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="PesquisarGrupoBeneficio"/>
+			</dependencies>
+		</transaction>
+
+		<!-- Coeficiente Reajustamento Base SM -->
+		<transaction name="PesquisarCoeficienteReajustamentoBaseSM" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="CoeficienteReajustamentoBaseSM" ret="CoeficienteReajustamentoBaseSM" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="DetalharCoeficienteReajustamentoBaseSM" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="CoeficienteReajustamentoBaseSM" ret="CoeficienteReajustamentoBaseSM" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="PesquisarCoeficienteReajustamentoBaseSM"/>
+			</dependencies>
+		</transaction>
+		
+		<!-- Índice Reajuste Buraco Negro -->
+		<transaction name="PesquisarIndiceReajusteBuracoNegro" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="IndiceReajusteBuracoNegro" ret="IndiceReajusteBuracoNegro" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="DetalharIndiceReajusteBuracoNegro" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="IndiceReajusteBuracoNegro" ret="IndiceReajusteBuracoNegro" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="PesquisarIndiceReajusteBuracoNegro"/>
+			</dependencies>
+		</transaction>
+		
+		<!-- Salário Mínimo Grupo Benefício -->
+		<transaction name="PesquisarSalarioMinimoGrupoBenef" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="SalarioMinimoGrupoBeneficio" ret="SalarioMinimoGrupoBeneficio" useAllDets="true">
+				</ftr>
+			</ftr-list>
+		</transaction>
+		<transaction name="DetalharSalarioMinimoGrupoBenef" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="SalarioMinimoGrupoBeneficio" ret="SalarioMinimoGrupoBeneficio" useAllDets="true">
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="PesquisarSalarioMinimoGrupoBenef"/>
+			</dependencies>
+		</transaction>
+	</transaction-model>
+</system>

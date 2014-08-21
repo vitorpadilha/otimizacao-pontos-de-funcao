@@ -1,0 +1,4110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<system>
+	<name>Bolsa de Valores</name>
+    <data-model>
+        <ilf name="DF0000">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+                <det name="DET0008"/>
+                <det name="DET0009"/>
+                <det name="DET0010"/>
+                <det name="DET0011"/>
+                <det name="DET0012"/>
+                <det name="DET0013"/>
+                <det name="DET0014"/>
+                <det name="DET0015"/>
+                <det name="DET0016"/>
+                <det name="DET0017"/>
+                <det name="DET0018"/>
+                <det name="DET0019"/>
+                <det name="DET0020"/>
+                <det name="DET0021"/>
+                <det name="DET0022"/>
+                <det name="DET0023"/>
+                <det name="DET0024"/>
+                <det name="DET0025"/>
+                <det name="DET0026"/>
+                <det name="DET0027"/>
+                <det name="DET0028"/>
+                <det name="DET0029"/>
+                <det name="DET0030"/>
+                <det name="DET0031"/>
+                <det name="DET0032"/>
+                <det name="DET0033"/>
+            </ret>
+            <ret name="RET0001">
+                <det name="DET0034"/>
+                <det name="DET0035"/>
+                <det name="DET0036"/>
+                <det name="DET0037"/>
+                <det name="DET0038"/>
+                <det name="DET0039"/>
+                <det name="DET0040"/>
+            </ret>
+            <ret name="RET0002">
+                <det name="DET0041"/>
+                <det name="DET0042"/>
+                <det name="DET0043"/>
+                <det name="DET0044"/>
+            </ret>
+            <ret name="RET0003">
+                <det name="DET0045"/>
+                <det name="DET0046"/>
+                <det name="DET0047"/>
+                <det name="DET0048"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0001">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0002">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+                <det name="DET0008"/>
+                <det name="DET0009"/>
+                <det name="DET0010"/>
+                <det name="DET0011"/>
+                <det name="DET0012"/>
+                <det name="DET0013"/>
+                <det name="DET0014"/>
+                <det name="DET0015"/>
+                <det name="DET0016"/>
+                <det name="DET0017"/>
+                <det name="DET0018"/>
+                <det name="DET0019"/>
+                <det name="DET0020"/>
+                <det name="DET0021"/>
+                <det name="DET0022"/>
+                <det name="DET0023"/>
+                <det name="DET0024"/>
+                <det name="DET0025"/>
+                <det name="DET0026"/>
+                <det name="DET0027"/>
+                <det name="DET0028"/>
+                <det name="DET0029"/>
+                <det name="DET0030"/>
+                <det name="DET0031"/>
+                <det name="DET0032"/>
+                <det name="DET0033"/>
+                <det name="DET0034"/>
+                <det name="DET0035"/>
+                <det name="DET0036"/>
+                <det name="DET0037"/>
+                <det name="DET0038"/>
+                <det name="DET0039"/>
+                <det name="DET0040"/>
+                <det name="DET0041"/>
+                <det name="DET0042"/>
+                <det name="DET0043"/>
+                <det name="DET0044"/>
+                <det name="DET0045"/>
+                <det name="DET0046"/>
+                <det name="DET0047"/>
+                <det name="DET0048"/>
+                <det name="DET0049"/>
+                <det name="DET0050"/>
+                <det name="DET0051"/>
+                <det name="DET0052"/>
+                <det name="DET0053"/>
+                <det name="DET0054"/>
+                <det name="DET0055"/>
+                <det name="DET0056"/>
+                <det name="DET0057"/>
+                <det name="DET0058"/>
+                <det name="DET0059"/>
+                <det name="DET0060"/>
+                <det name="DET0061"/>
+            </ret>
+            <ret name="RET0001">
+                <det name="DET0062"/>
+                <det name="DET0063"/>
+                <det name="DET0064"/>
+                <det name="DET0065"/>
+                <det name="DET0066"/>
+                <det name="DET0067"/>
+                <det name="DET0068"/>
+                <det name="DET0069"/>
+                <det name="DET0070"/>
+                <det name="DET0071"/>
+                <det name="DET0072"/>
+                <det name="DET0073"/>
+                <det name="DET0074"/>
+                <det name="DET0075"/>
+                <det name="DET0076"/>
+                <det name="DET0077"/>
+            </ret>
+            <ret name="RET0002">
+                <det name="DET0078"/>
+                <det name="DET0079"/>
+                <det name="DET0080"/>
+                <det name="DET0081"/>
+                <det name="DET0082"/>
+            </ret>
+            <ret name="RET0003">
+                <det name="DET0083"/>
+                <det name="DET0084"/>
+                <det name="DET0085"/>
+                <det name="DET0086"/>
+                <det name="DET0087"/>
+                <det name="DET0088"/>
+            </ret>
+            <ret name="RET0004">
+                <det name="DET0089"/>
+                <det name="DET0090"/>
+                <det name="DET0091"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0003">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0004">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+            </ret>
+            <ret name="RET0001">
+                <det name="DET0004"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0005">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0006">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0007">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0008">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+                <det name="DET0008"/>
+                <det name="DET0009"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0009">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0010">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0011">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+            </ret>
+            <ret name="RET0001">
+                <det name="DET0008"/>
+                <det name="DET0009"/>
+                <det name="DET0010"/>
+                <det name="DET0011"/>
+                <det name="DET0012"/>
+                <det name="DET0013"/>
+                <det name="DET0014"/>
+                <det name="DET0015"/>
+                <det name="DET0016"/>
+                <det name="DET0017"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0012">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0013">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+                <det name="DET0008"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0014">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+                <det name="DET0008"/>
+                <det name="DET0009"/>
+                <det name="DET0010"/>
+                <det name="DET0011"/>
+                <det name="DET0012"/>
+                <det name="DET0013"/>
+                <det name="DET0014"/>
+                <det name="DET0015"/>
+                <det name="DET0016"/>
+                <det name="DET0017"/>
+                <det name="DET0018"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0015">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+                <det name="DET0008"/>
+                <det name="DET0009"/>
+                <det name="DET0010"/>
+                <det name="DET0011"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0016">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+                <det name="DET0008"/>
+                <det name="DET0009"/>
+                <det name="DET0010"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0017">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+                <det name="DET0008"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0018">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+                <det name="DET0008"/>
+                <det name="DET0009"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0019">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+                <det name="DET0008"/>
+                <det name="DET0009"/>
+                <det name="DET0010"/>
+                <det name="DET0011"/>
+                <det name="DET0012"/>
+                <det name="DET0013"/>
+                <det name="DET0014"/>
+                <det name="DET0015"/>
+                <det name="DET0016"/>
+                <det name="DET0017"/>
+                <det name="DET0018"/>
+                <det name="DET0019"/>
+                <det name="DET0020"/>
+                <det name="DET0021"/>
+                <det name="DET0022"/>
+                <det name="DET0023"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0020">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0021">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0022">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0023">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+                <det name="DET0008"/>
+                <det name="DET0009"/>
+                <det name="DET0010"/>
+                <det name="DET0011"/>
+                <det name="DET0012"/>
+                <det name="DET0013"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0024">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+                <det name="DET0008"/>
+                <det name="DET0009"/>
+                <det name="DET0010"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0025">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+                <det name="DET0008"/>
+                <det name="DET0009"/>
+                <det name="DET0010"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0026">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0027">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0028">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0029">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0030">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0031">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+                <det name="DET0008"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0032">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0033">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0034">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0035">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+                <det name="DET0007"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0036">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0037">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0038">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+                <det name="DET0004"/>
+                <det name="DET0005"/>
+                <det name="DET0006"/>
+            </ret>
+        </ilf>
+        <ilf name="DF0039">
+            <ret name="RET0000">
+                <det name="DET0000"/>
+                <det name="DET0001"/>
+                <det name="DET0002"/>
+                <det name="DET0003"/>
+            </ret>
+        </ilf>
+    </data-model>
+    <transaction-model>
+        <transaction type="EI" name="TF0000" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0001" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0000"/>
+                    <det name="DET0023"/>
+                    <det name="DET0024"/>
+                    <det name="DET0027"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0020"/>
+                    <det name="DET0025"/>
+                    <det name="DET0015"/>
+                    <det name="DET0019"/>
+                    <det name="DET0021"/>
+                    <det name="DET0022"/>
+                    <det name="DET0014"/>
+                    <det name="DET0026"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0003">
+                    <det name="DET0001"/>
+                    <det name="DET0000"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EO" name="TF0002" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0015"/>
+                    <det name="DET0004"/>
+                    <det name="DET0011"/>
+                    <det name="DET0019"/>
+                    <det name="DET0017"/>
+                    <det name="DET0024"/>
+                    <det name="DET0039"/>
+                    <det name="DET0035"/>
+                    <det name="DET0041"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EO" name="TF0003" extraDET="6" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0011"/>
+                    <det name="DET0019"/>
+                    <det name="DET0017"/>
+                    <det name="DET0024"/>
+                    <det name="DET0039"/>
+                    <det name="DET0035"/>
+                    <det name="DET0041"/>
+                    <det name="DET0004"/>
+                    <det name="DET0015"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0006">
+                    <det name="DET0007"/>
+                    <det name="DET0006"/>
+                    <det name="DET0001"/>
+                    <det name="DET0003"/>
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                    <det name="DET0006"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0007">
+                    <det name="DET0007"/>
+                    <det name="DET0006"/>
+                    <det name="DET0001"/>
+                    <det name="DET0003"/>
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                    <det name="DET0006"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0004" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0000"/>
+                    <det name="DET0060"/>
+                    <det name="DET0027"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0006">
+                    <det name="DET0003"/>
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                    <det name="DET0001"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0005" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0000"/>
+                    <det name="DET0061"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0006">
+                    <det name="DET0007"/>
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0007">
+                    <det name="DET0002"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0006" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0000"/>
+                    <det name="DET0060"/>
+                    <det name="DET0019"/>
+                    <det name="DET0001"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                    <det name="DET0004"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0006">
+                    <det name="DET0007"/>
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0007" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0000"/>
+                    <det name="DET0060"/>
+                    <det name="DET0019"/>
+                    <det name="DET0001"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                    <det name="DET0004"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0006">
+                    <det name="DET0007"/>
+                    <det name="DET0006"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0007">
+                    <det name="DET0003"/>
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0008" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                    <det name="DET0004"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0006">
+                    <det name="DET0007"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0007">
+                    <det name="DET0007"/>
+                    <det name="DET0006"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0009" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0000"/>
+                    <det name="DET0060"/>
+                    <det name="DET0059"/>
+                    <det name="DET0001"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                    <det name="DET0004"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0006">
+                    <det name="DET0007"/>
+                    <det name="DET0002"/>
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0007">
+                    <det name="DET0007"/>
+                    <det name="DET0006"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0010" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0015"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0006">
+                    <det name="DET0007"/>
+                    <det name="DET0003"/>
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                    <det name="DET0000"/>
+                    <det name="DET0006"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0007">
+                    <det name="DET0007"/>
+                    <det name="DET0003"/>
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                    <det name="DET0000"/>
+                    <det name="DET0006"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0011" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                    <det name="DET0004"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0008">
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0006"/>
+                    <det name="DET0004"/>
+                    <det name="DET0007"/>
+                    <det name="DET0005"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0012" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                    <det name="DET0004"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0008">
+                    <det name="DET0009"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0006"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0013" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0008">
+                    <det name="DET0009"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                    <det name="DET0005"/>
+                    <det name="DET0000"/>
+                    <det name="DET0008"/>
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0014" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0015" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0000"/>
+                    <det name="DET0060"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0016" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0004" name="RET0004" dataModelElement="DF0002">
+                    <det name="DET0089"/>
+                    <det name="DET0091"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0000"/>
+                    <det name="DET0060"/>
+                    <det name="DET0028"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0017" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0004" name="RET0004" dataModelElement="DF0002">
+                    <det name="DET0089"/>
+                    <det name="DET0091"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0000"/>
+                    <det name="DET0060"/>
+                    <det name="DET0028"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0018" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0004" name="RET0004" dataModelElement="DF0002">
+                    <det name="DET0089"/>
+                    <det name="DET0091"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0000"/>
+                    <det name="DET0060"/>
+                    <det name="DET0028"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0019" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0004" name="RET0004" dataModelElement="DF0002">
+                    <det name="DET0091"/>
+                    <det name="DET0089"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0000"/>
+                    <det name="DET0060"/>
+                    <det name="DET0028"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0020" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0004"/>
+                    <det name="DET0015"/>
+                    <det name="DET0005"/>
+                    <det name="DET0020"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0009">
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0021" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0060"/>
+                    <det name="DET0028"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0010">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0022" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0028"/>
+                    <det name="DET0060"/>
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0002"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0009">
+                    <det name="DET0000"/>
+                    <det name="DET0003"/>
+                    <det name="DET0002"/>
+                    <det name="DET0001"/>
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0023" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0060"/>
+                    <det name="DET0028"/>
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0002"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0010">
+                    <det name="DET0006"/>
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0009">
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0024" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0060"/>
+                    <det name="DET0028"/>
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0002"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0010">
+                    <det name="DET0004"/>
+                    <det name="DET0003"/>
+                    <det name="DET0006"/>
+                    <det name="DET0005"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0025" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0060"/>
+                    <det name="DET0028"/>
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0002"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0010">
+                    <det name="DET0006"/>
+                    <det name="DET0005"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0026" extraDET="8" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0001"/>
+                    <det name="DET0000"/>
+                    <det name="DET0004"/>
+                    <det name="DET0015"/>
+                    <det name="DET0020"/>
+                    <det name="DET0026"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0027" extraDET="8" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0000"/>
+                    <det name="DET0061"/>
+                    <det name="DET0001"/>
+                    <det name="DET0000"/>
+                    <det name="DET0004"/>
+                    <det name="DET0015"/>
+                    <det name="DET0020"/>
+                    <det name="DET0026"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0028" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0000"/>
+                    <det name="DET0061"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                    <det name="DET0008"/>
+                    <det name="DET0009"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                    <det name="DET0016"/>
+                    <det name="DET0017"/>
+                    <det name="DET0018"/>
+                    <det name="DET0020"/>
+                    <det name="DET0021"/>
+                    <det name="DET0022"/>
+                    <det name="DET0019"/>
+                    <det name="DET0010"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0004"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0029" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0060"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0030" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0060"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0031" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0003">
+                    <det name="DET0001"/>
+                    <det name="DET0000"/>
+                    <det name="DET0002"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0003"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0004">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0004">
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0032" extraDET="9" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0003">
+                    <det name="DET0001"/>
+                    <det name="DET0000"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0033" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0000"/>
+                    <det name="DET0061"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0002">
+                    <det name="DET0076"/>
+                    <det name="DET0062"/>
+                    <det name="DET0077"/>
+                    <det name="DET0064"/>
+                    <det name="DET0065"/>
+                    <det name="DET0066"/>
+                    <det name="DET0067"/>
+                    <det name="DET0068"/>
+                    <det name="DET0069"/>
+                    <det name="DET0070"/>
+                    <det name="DET0071"/>
+                    <det name="DET0072"/>
+                    <det name="DET0073"/>
+                    <det name="DET0074"/>
+                    <det name="DET0075"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0034" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0002">
+                    <det name="DET0076"/>
+                    <det name="DET0062"/>
+                    <det name="DET0077"/>
+                    <det name="DET0064"/>
+                    <det name="DET0065"/>
+                    <det name="DET0066"/>
+                    <det name="DET0067"/>
+                    <det name="DET0068"/>
+                    <det name="DET0069"/>
+                    <det name="DET0070"/>
+                    <det name="DET0071"/>
+                    <det name="DET0072"/>
+                    <det name="DET0073"/>
+                    <det name="DET0075"/>
+                    <det name="DET0074"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0035" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0002">
+                    <det name="DET0076"/>
+                    <det name="DET0077"/>
+                    <det name="DET0063"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0036" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0002">
+                    <det name="DET0077"/>
+                    <det name="DET0076"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0037" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0038" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0029"/>
+                    <det name="DET0030"/>
+                    <det name="DET0031"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0039" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0032"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0040" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0033"/>
+                    <det name="DET0034"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0041" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0035"/>
+                    <det name="DET0036"/>
+                    <det name="DET0037"/>
+                    <det name="DET0038"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0042" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0039"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0043" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0040"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0044" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0041"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0045" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0042"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0046" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0045"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0047" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0046"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0048" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0047"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0049" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0048"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0050" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0052"/>
+                    <det name="DET0053"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0051" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0054"/>
+                    <det name="DET0055"/>
+                    <det name="DET0056"/>
+                    <det name="DET0057"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0052" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0058"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0053" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0050"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0054" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0049"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0055" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0051"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0056" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0043"/>
+                    <det name="DET0044"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0057" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0059"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0058" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0002" name="RET0002" dataModelElement="DF0002">
+                    <det name="DET0078"/>
+                    <det name="DET0080"/>
+                    <det name="DET0079"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0059" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0002" name="RET0002" dataModelElement="DF0002">
+                    <det name="DET0079"/>
+                    <det name="DET0080"/>
+                    <det name="DET0082"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0060" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0005">
+                    <det name="DET0000"/>
+                    <det name="DET0003"/>
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                    <det name="DET0006"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0061" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0005">
+                    <det name="DET0000"/>
+                    <det name="DET0003"/>
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                    <det name="DET0006"/>
+                    <det name="DET0002"/>
+                    <det name="DET0001"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0062" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0028"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0063" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0028"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0064" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0003" name="RET0003" dataModelElement="DF0002">
+                    <det name="DET0088"/>
+                    <det name="DET0085"/>
+                    <det name="DET0084"/>
+                    <det name="DET0086"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0065" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0003" name="RET0003" dataModelElement="DF0002">
+                    <det name="DET0083"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                    <det name="DET0001"/>
+                    <det name="DET0009"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                    <det name="DET0017"/>
+                    <det name="DET0018"/>
+                    <det name="DET0020"/>
+                    <det name="DET0021"/>
+                    <det name="DET0022"/>
+                    <det name="DET0019"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0004">
+                    <det name="DET0003"/>
+                    <det name="DET0000"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0066" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0003" name="RET0003" dataModelElement="DF0002">
+                    <det name="DET0088"/>
+                    <det name="DET0083"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0067" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0003" name="RET0003" dataModelElement="DF0002">
+                    <det name="DET0088"/>
+                    <det name="DET0083"/>
+                    <det name="DET0087"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0002">
+                    <det name="DET0061"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0068" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0028"/>
+                    <det name="DET0030"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0002" name="RET0002" dataModelElement="DF0000">
+                    <det name="DET0044"/>
+                    <det name="DET0041"/>
+                    <det name="DET0042"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0069" extraDET="3" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0005"/>
+                    <det name="DET0029"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0070" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0003" name="RET0003" dataModelElement="DF0000">
+                    <det name="DET0046"/>
+                    <det name="DET0048"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0071" extraDET="2" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0003" name="RET0003" dataModelElement="DF0000">
+                    <det name="DET0046"/>
+                    <det name="DET0045"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0072" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0001"/>
+                    <det name="DET0006"/>
+                    <det name="DET0002"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0021"/>
+                    <det name="DET0000"/>
+                    <det name="DET0032"/>
+                    <det name="DET0031"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0073" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0074" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0075" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0001"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0076" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0002"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                    <det name="DET0009"/>
+                    <det name="DET0010"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0033"/>
+                    <det name="DET0020"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                    <det name="DET0017"/>
+                    <det name="DET0018"/>
+                    <det name="DET0016"/>
+                    <det name="DET0008"/>
+                    <det name="DET0024"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0000">
+                    <det name="DET0040"/>
+                    <det name="DET0034"/>
+                    <det name="DET0035"/>
+                    <det name="DET0036"/>
+                    <det name="DET0037"/>
+                    <det name="DET0038"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0077" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0027"/>
+                    <det name="DET0026"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0078" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0001"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0079" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0002"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                    <det name="DET0009"/>
+                    <det name="DET0010"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0020"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                    <det name="DET0017"/>
+                    <det name="DET0018"/>
+                    <det name="DET0016"/>
+                    <det name="DET0008"/>
+                    <det name="DET0024"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0000">
+                    <det name="DET0034"/>
+                    <det name="DET0035"/>
+                    <det name="DET0036"/>
+                    <det name="DET0037"/>
+                    <det name="DET0038"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0080" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0020"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0081" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0020"/>
+                    <det name="DET0009"/>
+                    <det name="DET0010"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0016"/>
+                    <det name="DET0017"/>
+                    <det name="DET0018"/>
+                    <det name="DET0022"/>
+                    <det name="DET0023"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0082" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0027"/>
+                    <det name="DET0026"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0083" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0001"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0084" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0009"/>
+                    <det name="DET0010"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0016"/>
+                    <det name="DET0017"/>
+                    <det name="DET0018"/>
+                    <det name="DET0022"/>
+                    <det name="DET0023"/>
+                    <det name="DET0020"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0085" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0020"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0086" extraDET="12" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0002"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0016"/>
+                    <det name="DET0007"/>
+                    <det name="DET0021"/>
+                    <det name="DET0006"/>
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0087" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0009"/>
+                    <det name="DET0010"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0016"/>
+                    <det name="DET0017"/>
+                    <det name="DET0018"/>
+                    <det name="DET0022"/>
+                    <det name="DET0023"/>
+                    <det name="DET0025"/>
+                    <det name="DET0019"/>
+                    <det name="DET0021"/>
+                    <det name="DET0020"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0088" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0028"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0089" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0028"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0090" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0002"/>
+                    <det name="DET0033"/>
+                    <det name="DET0006"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0091" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0001">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0004"/>
+                    <det name="DET0003"/>
+                    <det name="DET0005"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0092" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0001">
+                    <det name="DET0000"/>
+                    <det name="DET0002"/>
+                    <det name="DET0004"/>
+                    <det name="DET0003"/>
+                    <det name="DET0005"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0093" extraDET="6" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0015">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0094" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0015">
+                    <det name="DET0011"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0095" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0015">
+                    <det name="DET0011"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                    <det name="DET0008"/>
+                    <det name="DET0009"/>
+                    <det name="DET0010"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0096" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0015">
+                    <det name="DET0011"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0097" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0015">
+                    <det name="DET0011"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0098" extraDET="6" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0016">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0099" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0016">
+                    <det name="DET0010"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0100" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0016">
+                    <det name="DET0010"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                    <det name="DET0008"/>
+                    <det name="DET0009"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0101" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0016">
+                    <det name="DET0010"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0102" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0016">
+                    <det name="DET0010"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EO" name="TF0103" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0021">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EO" name="TF0104" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EO" name="TF0105" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0106" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0021">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0009"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0015"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0107" extraDET="5" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0020">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0016">
+                    <det name="DET0010"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0007"/>
+                    <det name="DET0007"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0019">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                    <det name="DET0008"/>
+                    <det name="DET0009"/>
+                    <det name="DET0010"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                    <det name="DET0016"/>
+                    <det name="DET0017"/>
+                    <det name="DET0018"/>
+                    <det name="DET0019"/>
+                    <det name="DET0020"/>
+                    <det name="DET0021"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0017">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0007"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0018">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0108" extraDET="3" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0020">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0016">
+                    <det name="DET0010"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0007"/>
+                    <det name="DET0007"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0019">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                    <det name="DET0008"/>
+                    <det name="DET0009"/>
+                    <det name="DET0010"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                    <det name="DET0016"/>
+                    <det name="DET0017"/>
+                    <det name="DET0018"/>
+                    <det name="DET0019"/>
+                    <det name="DET0020"/>
+                    <det name="DET0021"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0017">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0007"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0018">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0109" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0110" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0111" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0003">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0014">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                    <det name="DET0008"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                    <det name="DET0009"/>
+                    <det name="DET0010"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                    <det name="DET0016"/>
+                    <det name="DET0017"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0009"/>
+                    <det name="DET0010"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0112" extraDET="4" errorMsg="true">
+            <ftr-list/>
+        </transaction>
+        <transaction type="EQ" name="TF0113" extraDET="4" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0017">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0007"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0114" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0017">
+                    <det name="DET0000"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0115" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0116" extraDET="4" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0020">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0117" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0020">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0000"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0118" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0119" extraDET="5" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0016">
+                    <det name="DET0000"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0018">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0120" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0016">
+                    <det name="DET0000"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0018">
+                    <det name="DET0001"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                    <det name="DET0008"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0121" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0018">
+                    <det name="DET0009"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0122" extraDET="6" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0019">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0007"/>
+                    <det name="DET0008"/>
+                    <det name="DET0009"/>
+                    <det name="DET0010"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                    <det name="DET0016"/>
+                    <det name="DET0017"/>
+                    <det name="DET0018"/>
+                    <det name="DET0019"/>
+                    <det name="DET0020"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0123" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0015">
+                    <det name="DET0000"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0019">
+                    <det name="DET0001"/>
+                    <det name="DET0000"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0007"/>
+                    <det name="DET0008"/>
+                    <det name="DET0009"/>
+                    <det name="DET0010"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                    <det name="DET0016"/>
+                    <det name="DET0017"/>
+                    <det name="DET0018"/>
+                    <det name="DET0019"/>
+                    <det name="DET0020"/>
+                    <det name="DET0021"/>
+                    <det name="DET0006"/>
+                    <det name="DET0022"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0124" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0019">
+                    <det name="DET0023"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0125" extraDET="4" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0126" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0127" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0014"/>
+                    <det name="DET0015"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0128" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0006"/>
+                    <det name="DET0000"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EO" name="TF0129" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0013">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0012">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0130" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0013">
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                    <det name="DET0007"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0131" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                    <det name="DET0007"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0012">
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0132" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0013">
+                    <det name="DET0008"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0133" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0012">
+                    <det name="DET0006"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0134" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0013">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0135" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0012">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0136" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0013">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0137" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0012">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0138" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0013">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0139" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0012">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0140" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0013">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0141" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0013">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EO" name="TF0142" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EO" name="TF0143" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0144" extraDET="6" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0025">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0010"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0145" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0025">
+                    <det name="DET0010"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0146" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0025">
+                    <det name="DET0010"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                    <det name="DET0008"/>
+                    <det name="DET0009"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0147" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0025">
+                    <det name="DET0010"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0148" extraDET="7" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0024">
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0026">
+                    <det name="DET0001"/>
+                    <det name="DET0003"/>
+                    <det name="DET0007"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0149" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0024">
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0026">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0000"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0150" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0026">
+                    <det name="DET0007"/>
+                    <det name="DET0006"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0151" extraDET="4" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0027">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0000"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0152" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0027">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0000"/>
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0153" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0027">
+                    <det name="DET0004"/>
+                    <det name="DET0003"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0154" extraDET="4" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0037">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0155" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0037">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0004"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0156" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0037">
+                    <det name="DET0003"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0157" extraDET="6" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0024">
+                    <det name="DET0010"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0158" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0159" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0024">
+                    <det name="DET0010"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                    <det name="DET0008"/>
+                    <det name="DET0009"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0160" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0024">
+                    <det name="DET0010"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0161" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0022">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0162" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0022">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0163" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0022">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0164" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0003">
+                    <det name="DET0001"/>
+                    <det name="DET0000"/>
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0023">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                    <det name="DET0008"/>
+                    <det name="DET0009"/>
+                    <det name="DET0010"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0165" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0022">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0023">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0006"/>
+                    <det name="DET0007"/>
+                    <det name="DET0008"/>
+                    <det name="DET0009"/>
+                    <det name="DET0010"/>
+                    <det name="DET0011"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0166" extraDET="4" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0036">
+                    <det name="DET0001"/>
+                    <det name="DET0000"/>
+                    <det name="DET0002"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0167" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0036">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0000"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0168" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0036">
+                    <det name="DET0004"/>
+                    <det name="DET0003"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0169" extraDET="4" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0032">
+                    <det name="DET0001"/>
+                    <det name="DET0000"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0170" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0032">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0171" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0032">
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0172" extraDET="4" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0028">
+                    <det name="DET0001"/>
+                    <det name="DET0000"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0173" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0028">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0000"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0174" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0028">
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0175" extraDET="4" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0038">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0003"/>
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0176" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0038">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0003"/>
+                    <det name="DET0002"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0177" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0038">
+                    <det name="DET0005"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0178" extraDET="4" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0034">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0179" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0034">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0180" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0034">
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0181" extraDET="4" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0030">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0000"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0182" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0030">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0000"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0183" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0030">
+                    <det name="DET0005"/>
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0184" extraDET="5" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0033">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0025">
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0185" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0033">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0025">
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0186" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0033">
+                    <det name="DET0006"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0187" extraDET="5" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0025">
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0029">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0188" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0025">
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0029">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0000"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0189" extraDET="1" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0029">
+                    <det name="DET0006"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0190" extraDET="5" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0025">
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0035">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0191" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0025">
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0035">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0000"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0192" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0035">
+                    <det name="DET0007"/>
+                    <det name="DET0006"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0193" extraDET="5" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0031">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0025">
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0194" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0031">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                    <det name="DET0005"/>
+                    <det name="DET0000"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0025">
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0195" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0031">
+                    <det name="DET0008"/>
+                    <det name="DET0007"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EQ" name="TF0196" extraDET="6" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0031">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0003"/>
+                    <det name="DET0004"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0025">
+                    <det name="DET0002"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0197" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0031">
+                    <det name="DET0008"/>
+                    <det name="DET0006"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EO" name="TF0198" extraDET="2" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0012"/>
+                    <det name="DET0010"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0039">
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                    <det name="DET0000"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+        <transaction type="EI" name="TF0199" errorMsg="true">
+            <ftr-list>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0011">
+                    <det name="DET0001"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0001" name="RET0001" dataModelElement="DF0011">
+                    <det name="DET0008"/>
+                    <det name="DET0010"/>
+                    <det name="DET0017"/>
+                    <det name="DET0011"/>
+                    <det name="DET0014"/>
+                    <det name="DET0009"/>
+                    <det name="DET0012"/>
+                    <det name="DET0013"/>
+                    <det name="DET0015"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0000">
+                    <det name="DET0033"/>
+                    <det name="DET0021"/>
+                </ftr>
+                <ftr useAllDets="false" ret="RET0000" name="RET0000" dataModelElement="DF0039">
+                    <det name="DET0000"/>
+                    <det name="DET0001"/>
+                    <det name="DET0002"/>
+                </ftr>
+            </ftr-list>
+        </transaction>
+    </transaction-model>
+</system>

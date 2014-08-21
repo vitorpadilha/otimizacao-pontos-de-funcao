@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<name>Gestao De Pessoas</name>
+	<data-model>
+		<ilf name="Empregado">
+			<ret name="Empregado">
+				<det name="nome" />
+				<det name="matricula" />
+				<det name="endereco" />
+				<det name="bairro" />
+				<det name="dataAdmissao" />
+				<det name="dataRescisao" />
+				<det name="cpf" />
+				<det name="tipoContrato" />
+				<det name="nomeMae" />
+				<det name="nomePai" />
+				<det name="dataNascimento" />
+				<det name="ctps" />
+				<det name="ctpsOrgaoExpeditor" />
+				<det name="rg" />
+				<det name="rgOrgaoExpeditor" />
+				<det name="idEscolatidade" ref="Escolaridade" />
+				<det name="cep" />
+				<det name="idCidade" ref="Cidade" />
+			</ret>
+			<ret name="HistoricoFuncional">
+				<det name="idEmpregado" ref="Empregado" />
+				<det name="idCargo" ref="Cargo" />
+				<det name="dataInicio" />
+				<det name="dataTermino" />
+			</ret>
+			<ret name="HoraExtra">
+				<det name="idEmpregado" ref="Empregado" />
+				<det name="idGerente" ref="Gerente" dataModelElement="Empregado"/>
+				<det name="dataHoraExtra" />
+				<det name="horarioInicio" />
+				<det name="horarioTermino" />
+			</ret>
+			<ret name="Afastamento">
+				<det name="idEmpregado" ref="Empregado" />
+				<det name="idMotivoAfastamento" ref="MotivoAfastamento" />
+				<det name="dataInicio" />
+				<det name="dataRetorno" />
+			</ret>
+			<ret name="Gerente">
+				<det name="idEmpregado" ref="Empregado" />
+				<det name="idCentroDeCusto" ref="CentroDeCusto" dataModelElement="Estabelecimento"/>
+				<det name="dataInicio" />
+				<det name="dataTermino" />
+			</ret>
+			<ret name="HistoricoLotacao">
+				<det name="idEmpregado" ref="Empregado" />
+				<det name="idCentroDeCusto" ref="CentroDeCusto" dataModelElement="Estabelecimento" />
+				<det name="idMotivoTransferencia" ref="MotivoTransferencia" />
+				<det name="dataInicio" />
+				<det name="dataTermino" />
+			</ret>
+			<ret name="Falta">
+				<det name="idEmpregado" ref="Empregado" />
+				<det name="idMotivoFalta" ref="MotivoFalta" />
+				<det name="idGerente" ref="Gerente" dataModelElement="Empregado" description="Gerente que abonou a falta!"/>
+				<det name="dataFalta" />
+				<det name="dataTermino" />
+			</ret>
+			<ret name="ContraCheque">
+				<det name="idEmpregado" ref="Empregado" />
+				<det name="anoMes" />
+				<det name="tipoPagamento" />
+			</ret>
+			<ret name="ContraChequeVerba">
+				<det name="idContraCheque" ref="ContraCheque" dataModelElement="Empregado" />
+				<det name="idVerba" ref="Verba" />
+				<det name="valor" />
+			</ret>
+		</ilf>
+		<ilf name="MotivoAfastamento">
+			<ret name="MotivoAfastamento">
+				<det name="descricao"/>
+			</ret>
+		</ilf>
+		<ilf name="Estabelecimento">
+			<ret name="Estabelecimento">
+				<det name="idCidade" ref="Cidade" />
+				<det name="descricao"/>
+				<det name="endereco"/>
+				<det name="cep"/>
+				<det name="bairro"/>
+			</ret>
+			<ret name="CentroDeCusto">
+				<det name="idEstabelecimento" ref="Estabelecimento" />
+				<det name="descricao"/>
+				<det name="sigla"/>
+			</ret>			
+		</ilf>
+		<ilf name="MotivoTransferencia">
+			<ret name="MotivoTransferencia">
+				<det name="descricao"/>
+			</ret>
+		</ilf>
+		<ilf name="MotivoFalta">
+			<ret name="MotivoFalta">
+				<det name="descricao"/>
+			</ret>
+		</ilf>
+		<ilf name="Verba">
+			<ret name="Verba">
+				<det name="descricao"/>
+			</ret>
+		</ilf>
+		<ilf name="Cargo">
+			<ret name="Cargo">
+				<det name="descricao"/>
+			</ret>
+			<ret name="SalarioCargo">				
+				<det name="idCargo" ref="Cargo"/>
+				<det name="valor"/>
+				<det name="anoMesInicio"/>
+				<det name="anoMesTermino"/>
+			</ret>
+		</ilf>
+		<eif name="Cidade">
+			<ret name="Cidade">
+				<det name="nome" />
+				<det name="estado" />
+			</ret>
+		</eif>
+		<eif name="Escolaridade">
+			<ret name="Escolaridade">
+				<det name="descricao" />
+			</ret>
+		</eif>
+	</data-model>
+
+	<transaction-model>
+		<transaction name="IncluirNovoEmpregado" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Empregado" ret="Empregado" useAllDets="true" />
+				<ftr name="Cidade" ret="Cidade">
+					<det name="nome"/>
+				</ftr>
+				<ftr name="Escolaridade">
+					<det name="descricao"/>
+				</ftr>
+			</ftr-list>			
+		</transaction>
+		<transaction name="AlterarEmpregado" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Empregado" ret="Empregado" useAllDets="true" />
+				<ftr name="Cidade" ret="Cidade">
+					<det name="nome"/>
+				</ftr>
+				<ftr name="Escolaridade"  ret="Escolaridade">
+					<det name="descricao"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirNovoEmpregado"/>
+					<dependency ref="ConsultarEmpregado"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="RemoverEmpregado" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Empregado" ret="Empregado">
+					<det name="matricula"/>
+					<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirNovoEmpregado"/>
+					<dependency ref="ConsultarEmpregado"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="ConsultarEmpregado" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Empregado" ret="Empregado">
+					<det name="matricula"/>
+					<det name="nome"/>
+					<det name="dataAdmissao"/>
+					<det name="dataRescisao"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirNovoEmpregado"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="IncluirAfastamento" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Afastamento" ret="Afastamento" dataModelElement="Empregado">
+					<det name="dataInicio"/>
+				</ftr>
+				<ftr name="MotivoAfastamento">
+				 	<det name="descricao"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirNovoEmpregado"/>
+					<dependency ref="IncluirMotivoDeAfastamento" canBeWeak="true"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="AlterarAfastamento" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Afastamento"  ret="Afastamento" dataModelElement="Empregado" useAllDets="true"/>
+				<ftr name="MotivoAfastamento">
+				 	<det name="descricao"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>				
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirAfastamento"/>
+					<dependency ref="ConsultarAfastamentos"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="CancelarAfastamento" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Afastamento" ret="Afastamento" dataModelElement="Empregado">
+					<det name="dataInicio"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirAfastamento"/>
+					<dependency ref="ConsultarAfastamentos"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="ConsultarAfastamentos" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Afastamento" ret="Afastamento" dataModelElement="Empregado" useAllDets="true"/>
+				<ftr name="MotivoAfastamento">
+				 	<det name="descricao"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirAfastamento"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="DesignarGerencia" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Gerente" ret="Gerente" dataModelElement="Empregado">
+					<det name="dataInicio"/>
+				</ftr>
+				<ftr name="CentroDeCusto" ret="CentroDeCusto" dataModelElement="Estabelecimento">
+				 	<det name="sigla"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirNovoEmpregado"/>
+					<dependency ref="IncluirCentroDeCusto"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="AlterarDesignacaoDeGerencia" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Gerente" ret="Gerente" dataModelElement="Empregado" useAllDets="true"/>
+				<ftr name="CentroDeCusto" ret="CentroDeCusto" dataModelElement="Estabelecimento">
+				 	<det name="sigla"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="DesignarGerencia"/>
+					<dependency ref="ConsultarDesignacaoDeGerencia"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="RemoverDesignacaoDeGerencia" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Gerente" ret="Gerente" dataModelElement="Empregado">
+					<det name="dataInicio"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="DesignarGerencia"/>
+					<dependency ref="ConsultarDesignacaoDeGerencia"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="ConsultarDesignacaoDeGerencia" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Gerente" ret="Gerente" dataModelElement="Empregado" useAllDets="true" />
+				<ftr name="CentroDeCusto" ret="CentroDeCusto" dataModelElement="Estabelecimento">
+				 	<det name="sigla"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="DesignarGerencia"/>
+			</dependencies>			
+		</transaction>		
+		<transaction name="IncluirLotacao" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="HistoricoLotacao" ret="HistoricoLotacao" dataModelElement="Empregado">
+					<det name="dataInicio"/>
+					<det name="dataTermino"/>
+				</ftr>
+				<ftr name="CentroDeCusto" ret="CentroDeCusto" dataModelElement="Estabelecimento">
+				 	<det name="sigla"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+				<!--ftr name="MotivoTransferencia">
+				 	<det name="descricao"/>
+				</ftr-->
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirNovoEmpregado"/>
+					<dependency ref="IncluirCentroDeCusto"/>
+					<dependency ref="IncluirMotivoDeTransferencia"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="RemoverLotacao" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="HistoricoLotacao" ret="HistoricoLotacao" dataModelElement="Empregado">
+					<det name="dataInicio"/>
+				</ftr>>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirLotacao"/>
+					<dependency ref="ConsultarLotacoes"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="ConsultarLotacoes" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="HistoricoLotacao" ret="HistoricoLotacao" dataModelElement="Empregado">
+					<det name="dataInicio"/>
+				</ftr>>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirLotacao"/>
+			</dependencies>			
+		</transaction>
+
+		<transaction name="IncluirFalta" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Falta" ret="Falta" dataModelElement="Empregado" useAllDets="true"/>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+				<ftr name="MotivoFalta">
+				 	<det name="descricao"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirNovoEmpregado"/>
+					<dependency ref="IncluirMotivoDeFalta" canBeWeak="true"/>
+			</dependencies>			
+		</transaction>
+		
+		<transaction name="AbonarFalta" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Falta" dataModelElement="Empregado" ret="Falta" useAllDets="true"/>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+				<ftr name="MotivoFalta">
+				 	<det name="descricao"/>
+				</ftr>
+				<ftr name="Gerente" ret="Gerente" dataModelElement="Empregado">
+					<det name="idEmpregado"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirFalta"/>
+					<dependency ref="ConsultarFaltas"/>
+					<dependency ref="DesignarGerencia"/>
+			</dependencies>			
+		</transaction>
+		
+		
+		<transaction name="RemoverFalta" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Falta" dataModelElement="Empregado" ret="Falta">
+					<det name="dataFalta"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirFalta"/>
+					<dependency ref="ConsultarFaltas"/>
+			</dependencies>			
+		</transaction>
+
+		<transaction name="AlterarFalta" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Falta" dataModelElement="Empregado" ret="Falta">
+					<det name="dataFalta"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirFalta"/>
+					<dependency ref="ConsultarFaltas"/>
+			</dependencies>			
+		</transaction>
+		
+		<transaction name="ConsultarFaltas" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Falta" dataModelElement="Empregado" ret="Falta">
+					<det name="dataFalta"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirFalta"/>
+			</dependencies>			
+		</transaction>
+		
+		<transaction name="IncluirHoraExtra" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="HoraExtra" dataModelElement="Empregado" ret="HoraExtra"  useAllDets="true"/>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+				<ftr name="Gerente" dataModelElement="Empregado" ret="Gerente">
+					<det name="idEmpregado"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirNovoEmpregado"/>
+					<dependency ref="DesignarGerencia"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="AlterarHoraExtra" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="HoraExtra" ret="HoraExtra" dataModelElement="Empregado">
+					<det name="dataHoraExtra"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirHoraExtra"/>
+					<dependency ref="ConsultarHorasExtras"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="RemoverHoraExtra" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="HoraExtra" ret="HoraExtra" dataModelElement="Empregado">
+					<det name="dataHoraExtra"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirHoraExtra"/>
+					<dependency ref="ConsultarHorasExtras"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="ConsultarHorasExtras" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="HoraExtra" dataModelElement="Empregado" ret="HoraExtra"  useAllDets="true"/>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+				<ftr name="Gerente" dataModelElement="Empregado" ret="Gerente">
+					<det name="idEmpregado"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirHoraExtra"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="AssociarCargoAEmpregado" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="HistoricoFuncional" dataModelElement="Empregado" ret="HistoricoFuncional"  useAllDets="true"/>
+				<ftr name="Cargo">
+					<det name="descricao"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirNovoEmpregado"/>
+					<dependency ref="IncluirCargo"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="RemoverCargoDeEmpregado" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="HistoricoFuncional" dataModelElement="Empregado" ret="HistoricoFuncional">
+					<det name="dataInicio"/>
+				</ftr>
+				<ftr name="Cargo">
+					<det name="descricao"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="AssociarCargoAEmpregado"/>
+					<dependency ref="ConsultarCargosDeEmpregado"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="ConsultarCargosDeEmpregado" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="HistoricoFuncional" dataModelElement="Empregado" ret="HistoricoFuncional">
+					<det name="dataInicio"/>
+				</ftr>
+				<ftr name="Cargo">
+					<det name="descricao"/>
+				</ftr>
+				<ftr name="Empregado">
+				 	<det name="matricula"/>
+				 	<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="AssociarCargoAEmpregado"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="IncluirEstabelecimento" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Estabelecimento" useAllDets="true"/>
+			</ftr-list>
+		</transaction>
+		<transaction name="RemoverEstabelecimento" errorMsg="true" type="EI">
+			<ftr-list>			
+				<ftr name="Estabelecimento">
+					<det name="descricao" />					
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirEstabelecimento"/>
+					<dependency ref="ConsultarEstabelecimento"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="AlterarEstabelecimento" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Estabelecimento" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirEstabelecimento"/>
+					<dependency ref="ConsultarEstabelecimento"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="ConsultarEstabelecimento" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Estabelecimento">
+					<det name="descricao" />					
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirEstabelecimento"/>
+			</dependencies>			
+		</transaction>
+
+		<transaction name="IncluirCentroDeCusto" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="CentroDeCusto" dataModelElement="Estabelecimento" ret="CentroDeCusto" useAllDets="true"/>
+				<ftr name="Estabelecimento">
+				 	<det name="descricao"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirEstabelecimento" canBeWeak="true"/>
+			</dependencies>			
+		</transaction>
+		
+		
+		<transaction name="AlterarCentroDeCusto" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="CentroDeCusto" dataModelElement="Estabelecimento" ret="CentroDeCusto" useAllDets="true"/>
+				<ftr name="Estabelecimento">
+				 	<det name="descricao"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirCentroDeCusto"/>
+					<dependency ref="ConsultarCentroDeCusto"/>
+			</dependencies>			
+		</transaction>
+		
+		<transaction name="RemoverCentroDeCusto" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="CentroDeCusto" dataModelElement="Estabelecimento" ret="CentroDeCusto">
+					<det name="descricao"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirCentroDeCusto"/>
+					<dependency ref="ConsultarCentroDeCusto"/>
+			</dependencies>			
+		</transaction>
+		
+		<transaction name="ConsultarCentroDeCusto" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="CentroDeCusto" dataModelElement="Estabelecimento" ret="CentroDeCusto">
+					<det name="descricao"/>
+				</ftr>
+				<ftr name="Estabelecimento">
+				 	<det name="descricao"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirCentroDeCusto"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="IncluirMotivoDeAfastamento" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="MotivoAfastamento" useAllDets="true"/>
+			</ftr-list>
+		</transaction>
+		<transaction name="RemoverMotivoDeAfastamento" errorMsg="true" type="EI">
+			<ftr-list>			
+				<ftr name="MotivoAfastamento" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirMotivoDeAfastamento"/>
+					<dependency ref="ConsultarMotivosDeAfastamento"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="AlterarMotivoDeAfastamento" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="MotivoAfastamento" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirMotivoDeAfastamento"/>
+					<dependency ref="ConsultarMotivosDeAfastamento"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="ConsultarMotivosDeAfastamento" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="MotivoAfastamento" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirMotivoDeAfastamento"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="IncluirMotivoDeFalta" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="MotivoFalta" useAllDets="true"/>
+			</ftr-list>
+		</transaction>
+		<transaction name="RemoverMotivoDeFalta" errorMsg="true" type="EI">
+			<ftr-list>			
+				<ftr name="MotivoFalta" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirMotivoDeFalta"/>
+					<dependency ref="ConsultarMotivosDeFalta"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="AlterarMotivoDeFalta" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="MotivoFalta" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirMotivoDeFalta"/>
+					<dependency ref="ConsultarMotivosDeFalta"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="ConsultarMotivosDeFalta" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="MotivoFalta" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirMotivoDeFalta"/>
+			</dependencies>			
+		</transaction>		
+		<transaction name="IncluirMotivoDeTransferencia" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="MotivoTransferencia" useAllDets="true"/>
+			</ftr-list>
+		</transaction>
+		<transaction name="RemoverMotivoDeTransferencia" errorMsg="true" type="EI">
+			<ftr-list>			
+				<ftr name="MotivoTransferencia" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirMotivoDeTransferencia"/>
+					<dependency ref="ConsultarMotivosDeTransferencia"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="AlterarMotivoDeTransferencia" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="MotivoTransferencia" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirMotivoDeTransferencia"/>
+					<dependency ref="ConsultarMotivosDeTransferencia"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="ConsultarMotivosDeTransferencia" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="MotivoTransferencia" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirMotivoDeTransferencia"/>
+			</dependencies>			
+		</transaction>				
+		<transaction name="IncluirVerba" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Verba" useAllDets="true"/>
+			</ftr-list>
+		</transaction>
+		<transaction name="RemoverVerba" errorMsg="true" type="EI">
+			<ftr-list>			
+				<ftr name="Verba" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirVerba"/>
+					<dependency ref="ConsultarVerbas"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="AlteraVerba" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Verba" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirVerba"/>
+					<dependency ref="ConsultarVerbas"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="ConsultarVerbas" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Verba" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirVerba"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="IncluirCargo" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Cargo" useAllDets="true"/>
+			</ftr-list>
+		</transaction>
+		<transaction name="RemoverCargo" errorMsg="true" type="EI">
+			<ftr-list>			
+				<ftr name="Cargo" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirCargo"/>
+					<dependency ref="ConsultarCargos"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="AlteraCargo" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Cargo" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirCargo"/>
+					<dependency ref="ConsultarCargos"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="ConsultarCargos" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Cargo" useAllDets="true"/>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirCargo"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="IncluirSalarioDoCargo" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="SalarioCargo" dataModelElement="Cargo" ret="SalarioCargo">
+					<det name="valor"/>
+					<det name="anoMesInicio"/>
+				</ftr>
+				<ftr name="Cargo">
+					<det name="descricao"/>
+				</ftr>				
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirCargo"/>
+			</dependencies>	
+		</transaction>
+		<transaction name="RemoverSalarioDoCargo" errorMsg="true" type="EI">
+			<ftr-list>			
+				<ftr name="SalarioCargo" ret="SalarioCargo" dataModelElement="Cargo">
+					<det name="valor"/>
+					<det name="anoMesInicio"/>
+				</ftr>
+				<ftr name="Cargo">
+					<det name="descricao"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirSalarioDoCargo"/>
+					<dependency ref="ConsultarSalariosDoCargo"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="AlteraSalarioDoCargo" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="SalarioCargo" dataModelElement="Cargo" useAllDets="true"/>
+				<ftr name="Cargo">
+					<det name="descricao"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirSalarioDoCargo"/>
+					<dependency ref="ConsultarSalariosDoCargo"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="ConsultarSalariosDoCargo" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="SalarioCargo" dataModelElement="Cargo">
+					<det name="valor"/>
+					<det name="anoMesInicio"/>
+				</ftr>
+				<ftr name="Cargo">
+					<det name="descricao"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirSalarioDoCargo"/>
+			</dependencies>			
+		</transaction>	
+		
+		
+		<transaction name="ProcessarFolha" errorMsg="true" type="EO">
+			<ftr-list>
+				<ftr name="ContraChequeVerba" dataModelElement="Empregado" ret="ContraChequeVerba" useAllDets="true"/>
+				<ftr name="ContraCheque"  dataModelElement="Empregado" ret="ContraCheque" useAllDets="true"/>	
+				<ftr name="Verba"  useAllDets="true"/>
+				<ftr name="Empregado">
+					<det name="matricula"/>
+				</ftr>
+				<ftr name="Falta" dataModelElement="Empregado" ret="Falta">
+					<det name="idEmpregado"/>
+					<det name="idGerente"/>
+					<det name="dataFalta"/>
+				</ftr>
+				<ftr name="Gerente" dataModelElement="Empregado" ret="Gerente">
+					<det name="idEmpregado"/>
+					<det name="dataInicio"/>
+					<det name="dataTermino"/>
+				</ftr>
+				<ftr name="Afastamento" dataModelElement="Empregado" ret="Afastamento">
+					<det name="idEmpregado"/>
+					<det name="dataInicio"/>
+					<det name="dataRetorno"/>
+				</ftr>
+				<ftr name="HoraExtra" dataModelElement="Empregado" ret="HoraExtra">
+					<det name="idEmpregado"/>
+					<det name="dataHoraExtra"/>
+					<det name="horarioInicio"/>
+					<det name="horarioTermino"/>
+				</ftr>
+				<ftr name="HistoricoFuncional" dataModelElement="Empregado" ret="HistoricoFuncional">
+					<det name="idEmpregado"/>
+					<det name="idCargo"/>
+					<det name="dataInicio"/>
+					<det name="dataTermino"/>
+				</ftr>
+				<ftr name="SalarioCargo" dataModelElement="Cargo">
+					<det name="idCargo"/>
+					<det name="anoMesInicio"/>
+					<det name="anoMesTermino"/>
+					<det name="valor"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirVerba"/>
+					<dependency ref="IncluirNovoEmpregado"/>
+					<dependency ref="IncluirHoraExtra"/>
+					<dependency ref="IncluirSalarioDoCargo"/>
+					<dependency ref="DesignarGerencia"/>
+					<dependency ref="IncluirAfastamento"/>
+					<dependency ref="AssociarCargoAEmpregado"/>
+					<dependency ref="IncluirFalta"/>
+					<dependency ref="IncluirHoraExtra"/>
+					<dependency ref="IncluirLotacao"/>
+			</dependencies>	
+		</transaction>
+				
+		<transaction name="AdicionarVerbaParaEmpregado" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="ContraChequeVerba" dataModelElement="Empregado" ret="ContraChequeVerba" useAllDets="true"/>
+				<ftr name="ContraCheque"  dataModelElement="Empregado" ret="ContraCheque" useAllDets="true"/>	
+				<ftr name="Verba"  useAllDets="true"/>
+				<ftr name="Empregado">
+					<det name="nome"/>
+					<det name="matricula"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirVerba"/>
+					<dependency ref="IncluirNovoEmpregado"/>
+					<dependency ref="ProcessarFolha"/>
+			</dependencies>	
+		</transaction>
+		<transaction name="RemoverVerbaDeEmpregado" errorMsg="true" type="EI">
+			<ftr-list>			
+				<ftr name="ContraChequeVerba" dataModelElement="Empregado" ret="ContraChequeVerba" useAllDets="true"/>
+				<ftr name="ContraCheque"  dataModelElement="Empregado" ret="ContraCheque" useAllDets="true"/>	
+				<ftr name="Verba"  useAllDets="true"/>
+				<ftr name="Empregado">
+					<det name="nome"/>
+					<det name="matricula"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="ProcessarFolha"/>
+					<dependency ref="VisualizarContraCheques"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="AlterarVerbaDeEmpregado" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="ContraChequeVerba" dataModelElement="Empregado" ret="ContraChequeVerba" useAllDets="true"/>
+				<ftr name="ContraCheque"  dataModelElement="Empregado" ret="ContraCheque" useAllDets="true"/>	
+				<ftr name="Verba"  useAllDets="true"/>
+				<ftr name="Empregado">
+					<det name="nome"/>
+					<det name="matricula"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="ProcessarFolha"/>
+					<dependency ref="VisualizarContraCheques"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="VisualizarContraCheques" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="ContraChequeVerba" dataModelElement="Empregado" ret="ContraChequeVerba" useAllDets="true"/>
+				<ftr name="ContraCheque"  dataModelElement="Empregado" ret="ContraCheque" useAllDets="true"/>	
+				<ftr name="Verba"  useAllDets="true"/>
+				<ftr name="Empregado">
+					<det name="nome"/>
+					<det name="matricula"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="ProcessarFolha"/>
+			</dependencies>			
+		</transaction>
+		<transaction name="VisualizarProprioContraCheque" errorMsg="true"  type="EQ">
+			<ftr-list>
+				<ftr name="ContraChequeVerba" dataModelElement="Empregado" ret="ContraChequeVerba" useAllDets="true"/>
+				<ftr name="ContraCheque"  dataModelElement="Empregado" ret="ContraCheque" useAllDets="true"/>	
+				<ftr name="Verba"  useAllDets="true"/>
+				<ftr name="Empregado">
+					<det name="nome"/>
+					<det name="matricula"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+					<dependency ref="ProcessarFolha"/>
+			</dependencies>			
+		</transaction>	
+	</transaction-model>
+</system>

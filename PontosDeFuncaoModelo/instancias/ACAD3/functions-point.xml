@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<name>Academico Alterado 2</name>
+	<data-model>		
+		<ilf name="Aluno">
+			<ret name="Aluno">
+				<det name="nome"/>
+				<det primaryKey="true" name="idAluno" />
+				<det name="dre"/>
+				<det name="senha"/>
+				<det name="email"/>
+				<det name="ano"/>
+				<det name="periodo"/>
+				<det name="nivel"/>
+				<det name="bolsista"/>
+				<det name="filiacao"/>
+				<det name="sexo"/>
+				<det name="estado_civil"/>
+				<det name="nacionalidade"/>
+				<det name="naturalidade"/>
+				<det name="nascimento"/>
+				<det name="rg"/>
+				<det name="orgao_expedidor"/>
+				<det name="uf"/>
+				<det name="cpf"/>
+				<det name="certificado_militar"/>
+				<det name="titulo_eleitor"/>
+				<det name="endereco"/>
+				<det name="telefones"/>
+				<det name="regime"/>
+				<det name="formando"/>
+				<det name="observacoes"/>
+				<det name="defesa"/>
+				<det name="situacao"/>
+				<det name="grau"/>
+			</ret>
+			<ret name="AlunoDoutorado">
+				<det primaryKey="true" name="idAlunoDoutorado"/>
+				<det name="idAluno" ref="Aluno"/>
+				<det name="qualificacao"/>
+			</ret>
+			<ret name="Morto">
+				<det primaryKey="true" name="idAlunoMorto"/>
+				<det name="idAluno" ref="Aluno"/>
+				<det name="motivo"/>
+				<det name="data"/>
+			</ret>
+			<ret name="Bolsista">
+				<det primaryKey="true" name="idBolsista"/>
+				<det name="idAluno" ref="Aluno"/>
+				<det name="iniciobolsa"/>
+				<det name="terminobolsa"/>
+				<det name="instituicao_bolsa"/>
+			</ret>
+			<ret name="Trancamento">
+				<det primaryKey="true" name="idTrancamento" />
+				<det name="idAluno" ref="Aluno"/>
+				<det name="data_fim_trancamento"/>
+				<det name="data_inicio_trancamento"/>
+				<det name="motivo_trancamento"/>
+			</ret>
+			<ret name="Inscricoes">
+				<det name="ano"/>
+				<det name="periodo"/>
+				<det name="idDisciplina" ref="Disciplina" dataModelElement="Area"/>
+				<det name="idAluno" ref="Aluno"/>
+			</ret>
+		</ilf>
+
+		<ilf name="Area">
+			<ret name="Area">
+				<det primaryKey="true" name="idArea"/>
+				<det name="nome"/>
+				<det name="codigo"/>
+				<det name="idChefe" ref="Professores" dataModelElement="Area"/>
+			</ret>
+			<ret name="Linha">
+				<det primaryKey="true" name="idLinha"/>
+				<det name="nome"/>
+				<det name="idProfessorResponsavel" ref="Professores" dataModelElement="Area"/>
+				<det name="idArea" ref="Area"/>
+			</ret>
+			<ret name="Disciplina">
+				<det primaryKey="true" name="idDisciplina"/>
+				<det name="codigo"/>
+				<det name="nome"/>
+				<det name="tipo"/>
+				<det name="nivel"/>
+				<det name="creditos"/>
+				<det name="ementa"/>
+				<det name="obs"/>
+				<det name="idArea" ref="Area"/>
+				<det name="externa"/>
+			</ret>
+			<ret name="PreRequisitos">
+				<det name="idDisciplinaPreRequisito"  ref="Disciplina" hasSemanticMeaning="true" dataModelElement="Area"/>
+				<det name="idDisciplina"  ref="Disciplina" dataModelElement="Area"/>
+			</ret>
+			<ret name="InfoExternas">
+				<det primaryKey="true" name="idDisciplina" ref="Disciplina" dataModelElement="Area"/>
+				<det name="universidade_externa"/>
+				<det name="unidade_externa"/>
+				<det name="programa_externo"/>
+			</ret>
+			<ret name="Professores">
+				<det primaryKey="true" name="idProfessor"/>
+				<det name="nome"/>
+				<det name="iniciais"/>
+				<det name="login"/>
+				<det name="senha"/>
+				<det name="email"/>
+				<det name="outras"/>
+				<det name="idArea" ref="Area"/>
+			</ret>
+		</ilf>
+		<ilf name="Usuario">
+			<ret name="Usuario">
+				<det primaryKey="true" name="idUsuario"/>
+				<det name="nome"/>
+				<det name="login"/>
+				<det name="senha"/>
+				<det name="email"/>
+			</ret>
+		</ilf>
+		<ilf name="Turma">
+			<ret name="Turma">
+				<det primaryKey="true" name="idTurma"/>
+				<det name="ano"/>
+				<det name="periodo"/>
+				<det name="sala"/>
+				<det name="dias"/>
+				<det name="horario"/>
+				<det name="professores" ref="Professores" dataModelElement="Area"/>
+				<det name="idDisciplina" ref="Disciplina" dataModelElement="Area"/>
+			</ret>
+		</ilf>
+	</data-model>
+
+	<transaction-model>
+	
+		<transaction name="IncluirNovoAluno" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Aluno" ret="Aluno" useAllDets="true" />
+				<ftr name="Aluno" ret="AlunoDoutorado" useAllDets="true" />
+			</ftr-list>			
+		</transaction>
+		<transaction name="AlterarAluno" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Aluno" ret="Aluno" useAllDets="true" />
+				<ftr name="Aluno" ret="AlunoDoutorado" useAllDets="true" />
+				<ftr name="Aluno" ret="Morto" useAllDets="true" />
+			</ftr-list>		
+			<dependencies>
+					<dependency ref="IncluirNovoAluno"/>
+					<dependency ref="ConsultarAluno"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="ConsultarAluno" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Aluno" ret="Aluno" useAllDets="true" />
+				<ftr name="Aluno" ret="AlunoDoutorado" useAllDets="true" />
+				<ftr name="Aluno" ret="Morto" useAllDets="true" />
+			</ftr-list>	
+			<dependencies>
+					<dependency ref="IncluirNovoAluno"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="RemoverAluno" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Aluno" ret="Aluno">
+					<det name="nome"/>
+					<det name="dre"/>
+				</ftr>
+				<ftr name="Aluno" ret="AlunoDoutorado" useAllDets="true" />
+				<ftr name="Aluno" ret="Morto" useAllDets="true" />
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirNovoAluno"/>
+					<dependency ref="ConsultarAluno"/>
+			</dependencies>	
+		</transaction>
+		<transaction name="InformarTrancamentoDeAluno" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Aluno" ret="Aluno">
+					<det name="nome"/>
+					<det name="dre"/>
+				</ftr>
+				<ftr name="Aluno" ret="Trancamento">
+					<det name="data_inicio_trancamento"/>
+					<det name="motivo_trancamento"/>
+				</ftr>
+			</ftr-list>		
+			<dependencies>
+					<dependency ref="IncluirNovoAluno"/>
+					<dependency ref="ConsultarAluno"/>
+			</dependencies>		
+		</transaction>		
+		<transaction name="CancelarTrancamentoDeAluno" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Aluno" ret="Aluno">
+					<det name="nome"/>
+					<det name="dre"/>
+				</ftr>
+				<ftr name="Aluno" ret="Trancamento">
+					<det name="data_fim_trancamento"/>
+				</ftr>
+			</ftr-list>		
+			<dependencies>
+					<dependency ref="IncluirNovoAluno"/>
+					<dependency ref="ConsultarAluno"/>
+					<dependency ref="InformarTrancamentoDeAluno"/>
+			</dependencies>		
+		</transaction>		
+		<transaction name="RemoverTrancamentoDeAluno" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Aluno" ret="Aluno">
+					<det name="nome"/>
+					<det name="dre"/>
+				</ftr>
+				<ftr name="Aluno" ret="Trancamento" useAllDets="true" />
+			</ftr-list>		
+			<dependencies>
+					<dependency ref="IncluirNovoAluno"/>
+					<dependency ref="ConsultarAluno"/>
+					<dependency ref="InformarTrancamentoDeAluno"/>
+			</dependencies>		
+		</transaction>
+		
+		
+		<transaction name="IncluirBolsaParaAluno" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Aluno" ret="Aluno">
+					<det name="nome"/>
+					<det name="dre"/>
+				</ftr>
+				<ftr name="Aluno" ret="Bolsista" useAllDets="true" />
+				<ftr name="Aluno" ret="Trancamento" useAllDets="true" />
+			</ftr-list>		
+			<dependencies>
+					<dependency ref="IncluirNovoAluno"/>
+					<dependency ref="ConsultarAluno"/>
+			</dependencies>		
+		</transaction>		
+		<transaction name="AlterarBolsaDeAluno" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Aluno" ret="Aluno">
+					<det name="nome"/>
+					<det name="dre"/>
+				</ftr>
+				<ftr name="Aluno" ret="Bolsista" useAllDets="true" />
+			</ftr-list>		
+			<dependencies>
+					<dependency ref="IncluirBolsaParaAluno"/>
+					<dependency ref="ConsultarBolsasDeAluno"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="ConsultarBolsasDeAluno" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Aluno" ret="Aluno">
+					<det name="nome"/>
+					<det name="dre"/>
+				</ftr>
+				<ftr name="Aluno" ret="Bolsista" useAllDets="true" />
+			</ftr-list>		
+			<dependencies>
+					<dependency ref="IncluirBolsaParaAluno"/>
+			</dependencies>		
+		</transaction>	
+		<transaction name="RemoverBolsaParaAluno" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Aluno" ret="Aluno">
+					<det name="nome"/>
+					<det name="dre"/>
+				</ftr>
+				<ftr name="Aluno" ret="Bolsista" useAllDets="true" />
+			</ftr-list>		
+			<dependencies>
+					<dependency ref="IncluirBolsaParaAluno"/>
+					<dependency ref="ConsultarBolsasDeAluno"/>
+			</dependencies>		
+		</transaction>
+		
+		<transaction name="IncluirNovoProfessor" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Area" ret="Professores" useAllDets="true" />
+				<ftr name="Area" ret="Area">
+					<det name="nome"/>
+				</ftr>
+			</ftr-list>			
+			<dependencies>
+				<dependency ref="IncluirNovaArea"/>
+			</dependencies>	
+		</transaction>
+		<transaction name="AlterarProfessor" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Area" ret="Professores" useAllDets="true" />
+				<ftr name="Area" ret="Area">
+					<det name="nome"/>
+				</ftr>
+			</ftr-list>		
+			<dependencies>
+					<dependency ref="IncluirNovoProfessor"/>
+					<dependency ref="ConsultarProfessor"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="ConsultarProfessor" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Area" ret="Professores" useAllDets="true" />
+				<ftr name="Area" ret="Area">
+					<det name="nome"/>
+				</ftr>
+			</ftr-list>	
+			<dependencies>
+					<dependency ref="IncluirNovoProfessor"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="RemoverProfessor" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Area" ret="Professores" useAllDets="true" />
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirNovoProfessor"/>
+					<dependency ref="ConsultarProfessor"/>
+			</dependencies>	
+		</transaction>
+		
+		
+		<transaction name="IncluirNovaArea" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Area" ret="Area" useAllDets="true" />
+				<ftr name="Area" ret="Professores">
+					<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirNovoProfessor"/>
+			</dependencies>	
+		</transaction>
+		<transaction name="AlterarArea" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Area" ret="Area" useAllDets="true" />
+				<ftr name="Area" ret="Professores">
+					<det name="nome"/>
+				</ftr>
+			</ftr-list>		
+			<dependencies>
+					<dependency ref="IncluirNovaArea"/>
+					<dependency ref="ConsultarArea"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="ConsultarArea" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Area" ret="Area" useAllDets="true" />
+				<ftr name="Area" ret="Professores">
+					<det name="nome"/>
+				</ftr>
+			</ftr-list>	
+			<dependencies>
+					<dependency ref="IncluirNovaArea"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="RemoverArea" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Area" ret="Area" useAllDets="true" />
+			</ftr-list>
+			<dependencies>
+					<dependency ref="IncluirNovaArea"/>
+					<dependency ref="ConsultarArea"/>
+			</dependencies>	
+		</transaction>
+		
+		
+		<transaction name="IncluirNovaLinha" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Area" ret="Area">
+					<det name="nome"/>
+				</ftr>
+				<ftr name="Area" ret="Linha" useAllDets="true" />
+				<ftr name="Area" ret="Professores">
+					<det name="nome"/>
+				</ftr>
+			</ftr-list>			
+			<dependencies>
+				<dependency ref="IncluirNovaArea"/>
+			</dependencies>	
+		</transaction>
+		<transaction name="AlterarLinha" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Area" ret="Area">
+					<det name="nome"/>
+				</ftr>
+				<ftr name="Area" ret="Linha" useAllDets="true" />
+				<ftr name="Area" ret="Professores">
+					<det name="nome"/>
+				</ftr>
+			</ftr-list>		
+			<dependencies>
+					<dependency ref="IncluirNovaLinha"/>
+					<dependency ref="ConsultarLinha"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="ConsultarLinha" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Area" ret="Area">
+					<det name="nome"/>
+				</ftr>
+				<ftr name="Area" ret="Linha" useAllDets="true" />
+				<ftr name="Area" ret="Professores">
+					<det name="nome"/>
+				</ftr>
+			</ftr-list>	
+			<dependencies>
+					<dependency ref="IncluirNovaLinha"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="RemoverLinha" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Area" ret="Area">
+					<det name="nome"/>
+				</ftr>
+				<ftr name="Area" ret="Linha" useAllDets="true" />
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirNovaLinha"/>
+				<dependency ref="ConsultarLinha"/>
+			</dependencies>	
+		</transaction>
+				
+		<transaction name="IncluirUsuario" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Usuario" ret="Usuario" useAllDets="true" />
+			</ftr-list>			
+		</transaction>
+		<transaction name="AlterarUsuario" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Usuario" ret="Usuario" useAllDets="true" />
+			</ftr-list>		
+			<dependencies>
+				<dependency ref="IncluirUsuario"/>
+				<dependency ref="ConsultarUsuario"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="ConsultarUsuario" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Usuario" ret="Usuario" useAllDets="true" />
+			</ftr-list>	
+			<dependencies>
+					<dependency ref="IncluirUsuario"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="RemoverUsuario" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Usuario" ret="Usuario">
+					<det name="nome"/>
+					<det name="login"/>
+				</ftr>				
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirUsuario"/>
+				<dependency ref="ConsultarUsuario"/>
+			</dependencies>			
+		</transaction>
+		
+		
+		
+		<transaction name="IncluirNovaDisciplina" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Area" ret="Disciplina" useAllDets="true" />
+				<ftr name="Area" ret="PreRequisitos" useAllDets="true" />
+				<ftr name="Area" ret="InfoExternas" useAllDets="true" />
+			</ftr-list>	
+					
+		</transaction>
+		<transaction name="AlterarDisciplina" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Area" ret="Disciplina" useAllDets="true" />
+				<ftr name="Area" ret="PreRequisitos" useAllDets="true" />
+				<ftr name="Area" ret="InfoExternas" useAllDets="true" />
+			</ftr-list>		
+			<dependencies>
+				<dependency ref="IncluirNovaDisciplina"/>
+				<dependency ref="ConsultarDisciplina"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="ConsultarDisciplina" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Area" ret="Disciplina" useAllDets="true" />
+				<ftr name="Area" ret="PreRequisitos" useAllDets="true" />
+				<ftr name="Area" ret="InfoExternas" useAllDets="true" />
+			</ftr-list>	
+			<dependencies>
+					<dependency ref="IncluirNovaDisciplina"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="RemoverDisciplina" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Area" ret="Disciplina">
+					<det name="nome"/>
+				</ftr>				
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirNovaDisciplina"/>
+				<dependency ref="ConsultarDisciplina"/>
+			</dependencies>			
+		</transaction>
+		
+		
+		
+		<transaction name="IncluirNovaTurma" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Turma" ret="Turma" useAllDets="true" />
+				<ftr name="Area" ret="Professores">
+					<det name="nome"/>
+				</ftr>
+			</ftr-list>			
+		</transaction>
+		<transaction name="AlterarTurma" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Turma" ret="Turma" useAllDets="true" />
+				<ftr name="Area" ret="Professores">
+					<det name="nome"/>
+				</ftr>
+			</ftr-list>		
+			<dependencies>
+				<dependency ref="IncluirNovaTurma"/>
+				<dependency ref="ConsultarTurma"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="ConsultarTurma" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Turma" ret="Turma" useAllDets="true" />
+				<ftr name="Area" ret="Professores">
+					<det name="nome"/>
+				</ftr>
+			</ftr-list>	
+			<dependencies>
+					<dependency ref="IncluirNovaTurma"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="RemoverTurma" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Turma" ret="Turma">
+				
+					<det name="ano"/>
+					<det name="periodo"/>
+				</ftr>				
+				<ftr name="Area" ret="Disciplina">
+					<det name="nome"/>
+				</ftr>
+			</ftr-list>
+			<dependencies>
+				<dependency ref="IncluirNovaTurma"/>
+				<dependency ref="ConsultarTurma"/>
+			</dependencies>			
+		</transaction>
+		
+		
+		
+		<transaction name="RealizarInscricaoEmTurma" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Aluno" ret="Inscricoes" useAllDets="true" />
+				<ftr name="Aluno" ret="Aluno">
+					<det name="nome"/>
+					<det name="dre"/>
+				</ftr>
+			</ftr-list>			
+			<dependencies>
+				<dependency ref="IncluirNovaTurma"/>
+				<dependency ref="IncluirNovoAluno"/>
+				<dependency ref="IncluirNovaDisciplina"/>
+			</dependencies>	
+		</transaction>
+		
+		<transaction name="ConsultarInscricaoEmTurma" errorMsg="true" type="EQ">
+			<ftr-list>
+				<ftr name="Aluno" ret="Inscricoes" useAllDets="true" />
+				<ftr name="Aluno" ret="Aluno">
+					<det name="nome"/>
+					<det name="dre"/>
+				</ftr>
+			</ftr-list>		
+			<dependencies>
+				<dependency ref="RealizarInscricaoEmTurma"/>
+			</dependencies>		
+		</transaction>
+		<transaction name="CancelarInscricaoEmTurma" errorMsg="true" type="EI">
+			<ftr-list>
+				<ftr name="Aluno" ret="Inscricoes" useAllDets="true" />
+				<ftr name="Aluno" ret="Aluno">
+					<det name="nome"/>
+					<det name="dre"/>
+				</ftr>
+			</ftr-list>		
+			<dependencies>
+				<dependency ref="CancelarInscricaoEmTurma"/>
+				<dependency ref="RealizarInscricaoEmTurma"/>
+			</dependencies>		
+		</transaction>
+		
+		
+		<transaction name="GeracaoDeComprovanteDeInscricao" errorMsg="true" type="EO">
+			<ftr-list>
+				<ftr name="Aluno" ret="Inscricoes" useAllDets="true" />
+				<ftr name="Aluno" ret="Aluno">
+					<det name="nome"/>
+					<det name="dre"/>
+					<det name="ano"/>
+					<det name="periodo"/>
+					<det name="nivel"/>
+				</ftr>
+				<ftr name="Area" ret="Disciplina">
+					<det name="nome"/>
+				</ftr>				
+				<ftr name="Turma" ret="Turma">
+					<det name="ano"/>
+					<det name="periodo"/>
+					<det name="sala"/>
+					<det name="dias"/>
+					<det name="horario"/>
+				</ftr>
+			</ftr-list>		
+			<dependencies>
+				<dependency ref="RealizarInscricaoEmTurma"/>
+				<dependency ref="IncluirNovaTurma"/>
+				<dependency ref="IncluirNovoAluno"/>
+				<dependency ref="IncluirNovaDisciplina"/>
+			</dependencies>		
+		</transaction>
+		
+	</transaction-model>
+</system>

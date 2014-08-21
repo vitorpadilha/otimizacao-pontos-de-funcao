@@ -1,0 +1,99 @@
+<stakeholders-interests>
+    <interests>
+        <interest transactionRef="IncluirNovoAluno" stakeholder="Secretaria" value="100"/>
+		
+        <interest transactionRef="AlterarAluno" stakeholder="Secretaria" value="25"/>
+		
+        <interest transactionRef="ConsultarAluno" stakeholder="Secretaria" value="100"/>
+		<interest transactionRef="ConsultarAluno" stakeholder="Professor" value="25"/>
+		
+        <interest transactionRef="RemoverAluno" stakeholder="Secretaria" value="100"/>
+		
+        <interest transactionRef="InformarTrancamentoDeAluno" stakeholder="Secretaria" value="100"/>
+		
+        <interest transactionRef="CancelarTrancamentoDeAluno" stakeholder="Secretaria" value="25"/>
+		
+        <interest transactionRef="RemoverTrancamentoDeAluno" stakeholder="Secretaria" value="75"/>
+		
+        <interest transactionRef="IncluirBolsaParaAluno" stakeholder="Professor" value="100"/>
+        <interest transactionRef="IncluirBolsaParaAluno" stakeholder="Secretaria" value="25"/>
+		
+        <interest transactionRef="AlterarBolsaDeAluno" stakeholder="Secretaria" value="25"/>
+        <interest transactionRef="AlterarBolsaDeAluno" stakeholder="Professor" value="25"/>
+		
+        <interest transactionRef="ConsultarBolsasDeAluno" stakeholder="Professor" value="100"/>
+		<interest transactionRef="ConsultarBolsasDeAluno" stakeholder="Secretaria" value="50"/>
+		
+        <interest transactionRef="RemoverBolsaParaAluno" stakeholder="Professor" value="100"/>
+        <interest transactionRef="RemoverBolsaParaAluno" stakeholder="Secretaria" value="50"/>
+		
+        <interest transactionRef="IncluirNovoProfessor" stakeholder="Professor" value="100"/>
+		
+        <interest transactionRef="AlterarProfessor" stakeholder="Secretaria" value="25"/>
+		
+        <interest transactionRef="ConsultarProfessor" stakeholder="Professor" value="100"/>
+		
+        <interest transactionRef="RemoverProfessor" stakeholder="Secretaria" value="100"/>
+		
+        <interest transactionRef="IncluirNovaArea" stakeholder="Secretaria" value="75"/>
+		
+        <interest transactionRef="AlterarArea" stakeholder="Secretaria" value="25"/>
+		
+        <interest transactionRef="ConsultarArea" stakeholder="Secretaria" value="75"/>
+		
+        <interest transactionRef="RemoverArea" stakeholder="Secretaria" value="75"/>
+		
+        <interest transactionRef="IncluirNovaLinha" stakeholder="Secretaria" value="25"/>
+		
+        <interest transactionRef="AlterarLinha" stakeholder="Secretaria" value="25"/>
+		
+        <interest transactionRef="ConsultarLinha" stakeholder="Secretaria" value="25"/>
+		
+        <interest transactionRef="RemoverLinha" stakeholder="Secretaria" value="25"/>
+		
+        <interest transactionRef="IncluirUsuario" stakeholder="Secretaria" value="50"/>
+		
+        <interest transactionRef="AlterarUsuario" stakeholder="Secretaria" value="25"/>
+		
+        <interest transactionRef="ConsultarUsuario" stakeholder="Secretaria" value="50"/>
+		
+        <interest transactionRef="RemoverUsuario" stakeholder="Secretaria" value="50"/>
+		
+        <interest transactionRef="IncluirNovaDisciplina" stakeholder="Secretaria" value="100"/>
+		
+        <interest transactionRef="AlterarDisciplina" stakeholder="Secretaria" value="50"/>
+		
+        <interest transactionRef="ConsultarDisciplina" stakeholder="Secretaria" value="75"/>
+        <interest transactionRef="ConsultarDisciplina" stakeholder="Aluno" value="50"/>
+        <interest transactionRef="ConsultarDisciplina" stakeholder="Professor" value="50"/>
+		
+        <interest transactionRef="RemoverDisciplina" stakeholder="Secretaria" value="50"/>
+		
+        <interest transactionRef="IncluirNovaTurma" stakeholder="Secretaria" value="100"/>
+		
+        <interest transactionRef="AlterarTurma" stakeholder="Secretaria" value="50"/>
+		
+        <interest transactionRef="ConsultarTurma" stakeholder="Professor" value="50"/>
+        <interest transactionRef="ConsultarTurma" stakeholder="Secretaria" value="75"/>
+		
+        <interest transactionRef="RemoverTurma" stakeholder="Secretaria" value="75"/>
+		
+        <interest transactionRef="RealizarInscricaoEmTurma" stakeholder="Secretaria" value="75"/>
+		<interest transactionRef="RealizarInscricaoEmTurma" stakeholder="Aluno" value="25"/>
+		
+        <interest transactionRef="ConsultarInscricaoEmTurma" stakeholder="Professor" value="25"/>
+        <interest transactionRef="ConsultarInscricaoEmTurma" stakeholder="Secretaria" value="75"/>
+        <interest transactionRef="ConsultarInscricaoEmTurma" stakeholder="Aluno" value="100"/>
+		
+        <interest transactionRef="CancelarInscricaoEmTurma" stakeholder="Secretaria" value="75"/>
+        <interest transactionRef="CancelarInscricaoEmTurma" stakeholder="Aluno" value="25"/>
+		
+        <interest transactionRef="GeracaoDeComprovanteDeInscricao" stakeholder="Aluno" value="100"/>
+		<interest transactionRef="GeracaoDeComprovanteDeInscricao" stakeholder="Secretaria" value="25"/>
+    </interests>
+    <stakeholders>
+        <stakeholder name="Secretaria" weight="2"/>
+        <stakeholder name="Professor" weight="1"/>
+        <stakeholder name="Aluno" weight="1"/>
+    </stakeholders>
+</stakeholders-interests>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stakeholders-interests>
+	<!-- Definição dos Stakeholders -->
+	<stakeholders>
+		<stakeholder name="DPCadastro" weight="2"/>
+		<stakeholder name="DPBeneficio" weight="2"/>
+		<stakeholder name="DPPagadoria" weight="2"/>
+		<stakeholder name="Empregado" weight="1"/>
+		<stakeholder name="Gerente" weight="1"/>
+	</stakeholders>
+	<interests>
+	<!-- Empregado -->
+		<interest stakeholder="DPCadastro" transactionRef="IncluirNovoEmpregado" value="100"/>
+		<interest stakeholder="DPBeneficio" transactionRef="IncluirNovoEmpregado" value="100"/>
+		<interest stakeholder="DPPagadoria" transactionRef="IncluirNovoEmpregado" value="100"/>		
+		<interest stakeholder="DPCadastro" transactionRef="AlterarEmpregado" value="50"/>
+		<interest stakeholder="DPCadastro" transactionRef="RemoverEmpregado" value="100"/>
+		<interest stakeholder="DPCadastro" transactionRef="ConsultarEmpregado" value="100"/>
+		<interest stakeholder="DPBeneficio" transactionRef="ConsultarEmpregado" value="100"/>
+		<interest stakeholder="DPPagadoria" transactionRef="ConsultarEmpregado" value="100"/>
+		
+	<!-- Afastamento -->
+		<interest stakeholder="DPBeneficio" transactionRef="IncluirAfastamento" value="100"/>
+		<interest stakeholder="DPPagadoria" transactionRef="IncluirAfastamento" value="50"/>
+		<interest stakeholder="DPBeneficio" transactionRef="AlterarAfastamento" value="50"/>
+		<interest stakeholder="DPBeneficio" transactionRef="CancelarAfastamento" value="100"/>
+		<interest stakeholder="DPBeneficio" transactionRef="ConsultarAfastamentos" value="100"/>
+	
+	<!-- Gerência -->		
+		<interest stakeholder="DPCadastro" transactionRef="DesignarGerencia" value="100"/>
+		<interest stakeholder="DPPagadoria" transactionRef="DesignarGerencia" value="50"/>
+		<interest stakeholder="DPCadastro" transactionRef="AlterarDesignacaoDeGerencia" value="50"/>
+		<interest stakeholder="DPCadastro" transactionRef="RemoverDesignacaoDeGerencia" value="100"/>
+		<interest stakeholder="DPCadastro" transactionRef="ConsultarDesignacaoDeGerencia" value="100"/>
+	
+	<!-- Lotação -->		
+		<interest stakeholder="DPCadastro" transactionRef="IncluirLotacao" value="50"/>
+		<interest stakeholder="DPPagadoria" transactionRef="IncluirLotacao" value="75"/>
+		<interest stakeholder="DPCadastro" transactionRef="RemoverLotacao" value="50"/>
+		<interest stakeholder="DPCadastro" transactionRef="ConsultarLotacoes" value="50"/>
+		
+	<!-- Falta -->	
+		<interest stakeholder="DPPagadoria" transactionRef="IncluirFalta" value="50"/>
+		<interest stakeholder="DPPagadoria" transactionRef="RemoverFalta" value="50"/>
+		<interest stakeholder="DPPagadoria" transactionRef="AlterarFalta" value="50"/>
+		<interest stakeholder="Gerente" transactionRef="AbonarFalta" value="25"/>		
+		<interest stakeholder="DPPagadoria" transactionRef="ConsultarFaltas" value="50"/>
+		
+	<!-- Hora Extra -->		
+		<interest stakeholder="DPPagadoria" transactionRef="IncluirHoraExtra" value="50"/>
+		<interest stakeholder="DPPagadoria" transactionRef="AlterarHoraExtra" value="50"/>
+		<interest stakeholder="DPPagadoria" transactionRef="RemoverHoraExtra" value="50"/>
+		<interest stakeholder="DPPagadoria" transactionRef="ConsultarHorasExtras" value="50"/>
+		
+	<!-- Dados Funcionais -->	
+		<interest stakeholder="DPCadastro" transactionRef="AssociarCargoAEmpregado" value="100"/>
+		<interest stakeholder="DPPagadoria" transactionRef="AssociarCargoAEmpregado" value="100"/>
+		<interest stakeholder="DPCadastro" transactionRef="RemoverCargoDeEmpregado" value="100"/>
+		<interest stakeholder="DPCadastro" transactionRef="ConsultarCargosDeEmpregado" value="100"/>
+		
+	<!-- Estabelecimento -->
+		<interest stakeholder="DPCadastro" transactionRef="IncluirEstabelecimento" value="50"/>
+		<interest stakeholder="DPCadastro" transactionRef="ConsultarEstabelecimento" value="50"/>
+		<interest stakeholder="DPCadastro" transactionRef="AlterarEstabelecimento" value="25"/>
+		<interest stakeholder="DPCadastro" transactionRef="ConsultarEstabelecimento" value="50"/>
+		<interest stakeholder="DPCadastro" transactionRef="RemoverEstabelecimento" value="25"/>
+		
+		
+	<!-- Centro de Custo -->
+		<interest stakeholder="DPCadastro" transactionRef="IncluirCentroDeCusto" value="50"/>
+		<interest stakeholder="DPPagadoria" transactionRef="IncluirCentroDeCusto" value="75"/>
+		<interest stakeholder="DPCadastro" transactionRef="AlterarCentroDeCusto" value="25"/>
+		<interest stakeholder="DPCadastro" transactionRef="RemoverCentroDeCusto" value="50"/>
+		<interest stakeholder="DPCadastro" transactionRef="ConsultarCentroDeCusto" value="50"/>
+		
+	<!-- Motivo Afastamento -->
+		<interest stakeholder="DPBeneficio" transactionRef="IncluirMotivoDeAfastamento" value="50"/>
+		<interest stakeholder="DPBeneficio" transactionRef="RemoverMotivoDeAfastamento" value="50"/>
+		<interest stakeholder="DPBeneficio" transactionRef="AlterarMotivoDeAfastamento" value="25"/>
+		<interest stakeholder="DPBeneficio" transactionRef="ConsultarMotivosDeAfastamento" value="50"/>
+	
+	<!-- Motivo Falta -->
+		<interest stakeholder="DPPagadoria" transactionRef="IncluirMotivoDeFalta" value="50"/>
+		<interest stakeholder="DPPagadoria" transactionRef="ConsultarMotivosDeFalta" value="50"/>
+		<interest stakeholder="DPPagadoria" transactionRef="AlterarMotivoDeFalta" value="25"/>
+		<interest stakeholder="DPPagadoria" transactionRef="RemoverMotivoDeFalta" value="50"/>
+		
+	<!-- Motivo Tranferência -->	
+		<interest stakeholder="DPCadastro" transactionRef="IncluirMotivoDeTransferencia" value="50"/>
+		<interest stakeholder="DPCadastro" transactionRef="ConsultarMotivosDeTransferencia" value="50"/>
+		<interest stakeholder="DPCadastro" transactionRef="AlterarMotivoDeTransferencia" value="25"/>
+		<interest stakeholder="DPCadastro" transactionRef="RemoverMotivoDeTransferencia" value="50"/>
+		
+	<!-- Verba -->
+		<interest stakeholder="DPPagadoria" transactionRef="IncluirVerba" value="100"/>
+		<interest stakeholder="DPPagadoria" transactionRef="RemoverVerba" value="100"/>
+		<interest stakeholder="DPPagadoria" transactionRef="AlteraVerba" value="100"/>
+		<interest stakeholder="DPPagadoria" transactionRef="ConsultarVerbas" value="100"/>
+		
+	<!-- Cargo -->	
+		<interest stakeholder="DPCadastro" transactionRef="IncluirCargo" value="100"/>
+		<interest stakeholder="DPPagadoria" transactionRef="IncluirCargo" value="100"/>
+		<interest stakeholder="DPCadastro" transactionRef="ConsultarCargos" value="100"/>
+		<interest stakeholder="DPCadastro" transactionRef="AlteraCargo" value="100"/>
+		<interest stakeholder="DPCadastro" transactionRef="RemoverCargo" value="100"/>
+	
+	<!-- Salário do Cargo -->		
+		<interest stakeholder="DPCadastro" transactionRef="IncluirSalarioDoCargo" value="100"/>
+		<interest stakeholder="DPPagadoria" transactionRef="IncluirSalarioDoCargo" value="100"/>
+		<interest stakeholder="DPCadastro" transactionRef="ConsultarSalariosDoCargo" value="100"/>
+		<interest stakeholder="DPCadastro" transactionRef="AlteraSalarioDoCargo" value="50"/>
+		<interest stakeholder="DPCadastro" transactionRef="RemoverSalarioDoCargo" value="100"/>
+	
+	<!-- Folha de Pagamento -->
+		<interest stakeholder="DPPagadoria" transactionRef="ProcessarFolha" value="100"/>
+		<interest stakeholder="Empregado" transactionRef="ProcessarFolha" value="100"/>
+		
+	<!-- Contra Cheque -->
+		<interest stakeholder="DPPagadoria" transactionRef="AdicionarVerbaParaEmpregado" value="100"/>
+		<interest stakeholder="DPPagadoria" transactionRef="RemoverVerbaDeEmpregado" value="100"/>
+		<interest stakeholder="DPPagadoria" transactionRef="AlterarVerbaDeEmpregado" value="25"/>
+		<interest stakeholder="DPPagadoria" transactionRef="VisualizarContraCheques" value="100"/>	
+		<interest stakeholder="Empregado" transactionRef="VisualizarProprioContraCheque" value="50"/>
+	</interests>
+</stakeholders-interests>
